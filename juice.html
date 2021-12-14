@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" sizes="25x16" href="img/jardae.png" />
+
+    <link rel="stylesheet" href="index.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <title>JAR Ecom</title>
+
+    <style>
+        body,
+        ::after,
+        ::before {
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/jardae.svg" alt="" width="50" height="34" class="d-inline-block align-text-top" />
+                JAR Ecom
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    <a class="nav-link" href="#">About Us</a>
+                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link disabled">Disabled</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h4 class="text-center mb-5 mt-3">Juice</h4>
+                <!-- 1 -->
+                <div class="card" style="width: 21rem; margin: auto;">
+                    <img src="img/ (65).jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's
+                            content.</p>
+                        <div class="hstack gap-3">
+                            <div class="bg-light border"><a href="order.html" class="btn btn-primary"
+                                    style="font-size: smaller;">Order>>></a></div>
+                            <div class="bg-light border"><a href="tel:09421219435" class="btn btn-primary"
+                                    style="font-size: smaller;">Call<i style="margin-left: 10px;"
+                                        class="fas fa-phone"></i></a></div>
+                            <div class="bg-light border"><button class="btn btn-primary" type="button"
+                                    data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight1"
+                                    aria-controls="offcanvasRight" style="font-size: smaller;">
+                                    Read More
+                                </button></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight1"
+                    aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header">
+                        <h5 id="offcanvasRightLabel">Juice1</h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit vero
+                        modi
+                        eligendi, quae distinctio eaque expedita veniam iure libero dolores necessitatibus nemo aperiam
+                        praesentium
+                        id culpa ducimus in, voluptatibus, maiores aliquam ut!</div>
+                </div>
+
+                <!-- 2 -->
+                <div class="card" style="width: 21rem; margin: auto;">
+                    <img src="img/ (48).jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's
+                            content.</p>
+                        <div class="hstack gap-3">
+                            <div class="bg-light border"><a href="order.html" class="btn btn-primary"
+                                    style="font-size: smaller;">Order>>></a></div>
+                            <div class="bg-light border"><a href="tel:09421219435" class="btn btn-primary"
+                                    style="font-size: smaller;">Call<i style="margin-left: 10px;"
+                                        class="fas fa-phone"></i></a></div>
+                            <div class="bg-light border"><button class="btn btn-primary" type="button"
+                                    data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight2"
+                                    aria-controls="offcanvasRight" style="font-size: smaller;">
+                                    Read More
+                                </button></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight2"
+                    aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header">
+                        <h5 id="offcanvasRightLabel">Juice2</h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit vero
+                        modi
+                        eligendi, quae distinctio eaque expedita veniam iure libero dolores necessitatibus nemo aperiam
+                        praesentium
+                        id culpa ducimus in, voluptatibus, maiores aliquam ut!</div>
+                </div>
+
+                <!-- 3 -->
+                <div class="card" style="width: 21rem; margin: auto;">
+                    <img src="img/ (105).jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's
+                            content.</p>
+                        <div class="hstack gap-3">
+                            <div class="bg-light border"><a href="order.html" class="btn btn-primary"
+                                    style="font-size: smaller;">Order>>></a></div>
+                            <div class="bg-light border"><a href="tel:09421219435" class="btn btn-primary"
+                                    style="font-size: smaller;">Call<i style="margin-left: 10px;"
+                                        class="fas fa-phone"></i></a></div>
+                            <div class="bg-light border"><button class="btn btn-primary" type="button"
+                                    data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight3"
+                                    aria-controls="offcanvasRight" style="font-size: smaller;">
+                                    Read More
+                                </button></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight3"
+                    aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header">
+                        <h5 id="offcanvasRightLabel">Juice3</h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit vero
+                        modi
+                        eligendi, quae distinctio eaque expedita veniam iure libero dolores necessitatibus nemo aperiam
+                        praesentium
+                        id culpa ducimus in, voluptatibus, maiores aliquam ut!</div>
+                </div>
+
+                <!-- 4 -->
+                <div class="card" style="width: 21rem; margin: auto;">
+                    <img src="img/ (103).jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's
+                            content.</p>
+                        <div class="hstack gap-3">
+                            <div class="bg-light border"><a href="order.html" class="btn btn-primary"
+                                    style="font-size: smaller;">Order>>></a></div>
+                            <div class="bg-light border"><a href="tel:09421219435" class="btn btn-primary"
+                                    style="font-size: smaller;">Call<i style="margin-left: 10px;"
+                                        class="fas fa-phone"></i></a></div>
+                            <div class="bg-light border"><button class="btn btn-primary" type="button"
+                                    data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight4"
+                                    aria-controls="offcanvasRight" style="font-size: smaller;">
+                                    Read More
+                                </button></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight4"
+                    aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header">
+                        <h5 id="offcanvasRightLabel">Juice4</h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit vero
+                        modi
+                        eligendi, quae distinctio eaque expedita veniam iure libero dolores necessitatibus nemo aperiam
+                        praesentium
+                        id culpa ducimus in, voluptatibus, maiores aliquam ut!</div>
+                </div>
+
+                <!-- 5 -->
+                <div class="card" style="width: 21rem; margin: auto;">
+                    <img src="img/ (104).jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's
+                            content.</p>
+                        <div class="hstack gap-3">
+                            <div class="bg-light border"><a href="order.html" class="btn btn-primary"
+                                    style="font-size: smaller;">Order>>></a></div>
+                            <div class="bg-light border"><a href="tel:09421219435" class="btn btn-primary"
+                                    style="font-size: smaller;">Call<i style="margin-left: 10px;"
+                                        class="fas fa-phone"></i></a></div>
+                            <div class="bg-light border"><button class="btn btn-primary" type="button"
+                                    data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight5"
+                                    aria-controls="offcanvasRight" style="font-size: smaller;">
+                                    Read More
+                                </button></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight5"
+                    aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header">
+                        <h5 id="offcanvasRightLabel">Juice5</h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit vero
+                        modi
+                        eligendi, quae distinctio eaque expedita veniam iure libero dolores necessitatibus nemo aperiam
+                        praesentium
+                        id culpa ducimus in, voluptatibus, maiores aliquam ut!</div>
+                </div>
+
+                <!-- 6 -->
+                <div class="card" style="width: 21rem; margin: auto;">
+                    <img src="img/ (101).jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's
+                            content.</p>
+                        <div class="hstack gap-3">
+                            <div class="bg-light border"><a href="order.html" class="btn btn-primary"
+                                    style="font-size: smaller;">Order>>></a></div>
+                            <div class="bg-light border"><a href="tel:09421219435" class="btn btn-primary"
+                                    style="font-size: smaller;">Call<i style="margin-left: 10px;"
+                                        class="fas fa-phone"></i></a></div>
+                            <div class="bg-light border"><button class="btn btn-primary" type="button"
+                                    data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight6"
+                                    aria-controls="offcanvasRight" style="font-size: smaller;">
+                                    Read More
+                                </button></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight6"
+                    aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header">
+                        <h5 id="offcanvasRightLabel">Juice6</h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit vero
+                        modi
+                        eligendi, quae distinctio eaque expedita veniam iure libero dolores necessitatibus nemo aperiam
+                        praesentium
+                        id culpa ducimus in, voluptatibus, maiores aliquam ut!</div>
+                </div>
+
+                <!-- 7 -->
+                <div class="card" style="width: 21rem; margin: auto;">
+                    <img src="img/ (107).jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's
+                            content.</p>
+                        <div class="hstack gap-3">
+                            <div class="bg-light border"><a href="order.html" class="btn btn-primary"
+                                    style="font-size: smaller;">Order>>></a></div>
+                            <div class="bg-light border"><a href="tel:09421219435" class="btn btn-primary"
+                                    style="font-size: smaller;">Call<i style="margin-left: 10px;"
+                                        class="fas fa-phone"></i></a></div>
+                            <div class="bg-light border"><button class="btn btn-primary" type="button"
+                                    data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight7"
+                                    aria-controls="offcanvasRight" style="font-size: smaller;">
+                                    Read More
+                                </button></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight7"
+                    aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header">
+                        <h5 id="offcanvasRightLabel">Juice7</h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit vero
+                        modi
+                        eligendi, quae distinctio eaque expedita veniam iure libero dolores necessitatibus nemo aperiam
+                        praesentium
+                        id culpa ducimus in, voluptatibus, maiores aliquam ut!</div>
+                </div>
+
+                <!-- 8 -->
+                <div class="card" style="width: 21rem; margin: auto;">
+                    <img src="img/ (102).jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's
+                            content.</p>
+                        <div class="hstack gap-3">
+                            <div class="bg-light border"><a href="order.html" class="btn btn-primary"
+                                    style="font-size: smaller;">Order>>></a></div>
+                            <div class="bg-light border"><a href="tel:09421219435" class="btn btn-primary"
+                                    style="font-size: smaller;">Call<i style="margin-left: 10px;"
+                                        class="fas fa-phone"></i></a></div>
+                            <div class="bg-light border"><button class="btn btn-primary" type="button"
+                                    data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight8"
+                                    aria-controls="offcanvasRight" style="font-size: smaller;">
+                                    Read More
+                                </button></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight8"
+                    aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header">
+                        <h5 id="offcanvasRightLabel">Juice8</h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit vero
+                        modi
+                        eligendi, quae distinctio eaque expedita veniam iure libero dolores necessitatibus nemo aperiam
+                        praesentium
+                        id culpa ducimus in, voluptatibus, maiores aliquam ut!</div>
+                </div>
+
+                <!-- 9 -->
+                <div class="card" style="width: 21rem; margin: auto;">
+                    <img src="img/ (106).jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's
+                            content.</p>
+                        <div class="hstack gap-3">
+                            <div class="bg-light border"><a href="order.html" class="btn btn-primary"
+                                    style="font-size: smaller;">Order>>></a></div>
+                            <div class="bg-light border"><a href="tel:09421219435" class="btn btn-primary"
+                                    style="font-size: smaller;">Call<i style="margin-left: 10px;"
+                                        class="fas fa-phone"></i></a></div>
+                            <div class="bg-light border"><button class="btn btn-primary" type="button"
+                                    data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight9"
+                                    aria-controls="offcanvasRight" style="font-size: smaller;">
+                                    Read More
+                                </button></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight9"
+                    aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header">
+                        <h5 id="offcanvasRightLabel">Juice9</h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit vero
+                        modi
+                        eligendi, quae distinctio eaque expedita veniam iure libero dolores necessitatibus nemo aperiam
+                        praesentium
+                        id culpa ducimus in, voluptatibus, maiores aliquam ut!</div>
+                </div>
+
+                <!-- 10 -->
+                <div class="card" style="width: 21rem; margin: auto;">
+                    <img src="img/ (108).jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's
+                            content.</p>
+                        <div class="hstack gap-3">
+                            <div class="bg-light border"><a href="order.html" class="btn btn-primary"
+                                    style="font-size: smaller;">Order>>></a></div>
+                            <div class="bg-light border"><a href="tel:09421219435" class="btn btn-primary"
+                                    style="font-size: smaller;">Call<i style="margin-left: 10px;"
+                                        class="fas fa-phone"></i></a></div>
+                            <div class="bg-light border"><button class="btn btn-primary" type="button"
+                                    data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight10"
+                                    aria-controls="offcanvasRight" style="font-size: smaller;">
+                                    Read More
+                                </button></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight10"
+                    aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header">
+                        <h5 id="offcanvasRightLabel">Juice10</h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit vero
+                        modi
+                        eligendi, quae distinctio eaque expedita veniam iure libero dolores necessitatibus nemo aperiam
+                        praesentium
+                        id culpa ducimus in, voluptatibus, maiores aliquam ut!</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
