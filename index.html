@@ -25,6 +25,27 @@
         s.parentNode.insertBefore(ci_search, s);
       })();
     </script>
+
+    <style>
+      .pho{
+            display: flex;
+                       
+            flex-direction: row;
+            justify-content: flex-start;
+            padding-right: 10px;
+            margin-right: 10px;
+            overflow-y: hidden;
+            overflow-x: auto;
+        }
+      .img{
+            width: 13rem;
+            height: 13rem;
+            margin: 10px;
+            border-radius: 15px;
+            box-shadow: 15px 15px #d6d2d2;
+            
+        }
+    </style>
 </head>
 <body>
   
@@ -90,7 +111,40 @@
           <h5 class="mb-3">Recently Added</h5>
           <div style="background-color:mediumpurple; padding: 15px;display: flex;flex-direction: row; overflow-x: auto; overflow-y: hidden; " class="col">
             <div style="margin-right: 20px;" class="item">
-              <a target="_blank" href="juice.html#juice5"><img style="width: 10rem; height: 10rem;" src="img/ (104).jpg" alt=""></a>
+              <a target="_blank" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight1"
+              aria-controls="offcanvasRight"><img style="width: 10rem; height: 10rem;" src="img/ (104).jpg" alt=""></a>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight1"
+                    aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header">
+                        <h5 id="offcanvasRightLabel">Clothe1</h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                      <div class="pho">
+                        <img class="img" src="img/ (10).jpg" alt="">
+                        <img class="img"  src="img/ (11).jpg" alt="">
+                        <img class="img"  src="img/ (12).jpg" alt="">
+                        <img class="img"  src="img/ (100).jpg" alt="">
+                        <img class="img"  src="img/ (110).jpg" alt="">
+                        <img class="img"  src="img/ (113).jpg" alt="">
+                    </div>
+                    <div class="info mt-3">
+                        <h4 style="font-weight: bold;">ဂျင်းအရှည် <span style="float: right;">15000Ks</span></h4>
+                        
+                        <span>မြန်မာပြည်တွင် ပြုလုပ်သည်။</span>
+                    </div>
+                    <div class="description mt-4">
+                        <p>ခရီးထွက်ချိန်ဝတ်မလား၊ ချစ်သူနဲ့ လျှောက်လည်ချိန်ဝတ်မလား၊ ဘယ်ချိန်ဝတ်ဝတ် လွတ်လပ်ပေါ့ပါးပြီး ဒီဇိုင်းမိုက်တဲ့ဂျင်းရှည်။
+                            လူကြီးလူငယ်မ‌ရွေး ဝတ်လို့ရ(အမျိုးသား)
+                           အရောင်တွေကတော့ အမဲ၊ အပြာရင့်၊ အပြာနု၊ ခဲ။
+                           sizeကတော့ 32,34,36,38,40
+                        </p>
+                    </div>
+                    <div class="more"></div>
+                    </div>
+              </div>
+              
               <span style="display: block;">Lemon Juice</span>
               <span style="display: block;">1500Ks</span>
             </div>
