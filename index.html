@@ -95,9 +95,10 @@
     <div style="margin-top: 1rem; display: flex;justify-content: space-around;"><ci-search></ci-search></div>
 
     <div id="Page1">
-        <a href="#" onclick="return show('Page2','Page1');">Show page 2</a>
+        
 
     <div class="container mt-3">
+      <!-- <a href="#" class="btn btn-primary" onclick="return show('Page2','Page1');">Show page 2</a> -->
 
         <div class="row">
             <div class="col">
@@ -296,7 +297,8 @@
             </div>
           </div>
           <div class="more" style="margin: auto; padding: 20px;">
-              <a href="cake.html" target="_blank" ><button type="button" class="btn btn-primary"  >To Shop>>><i class="fas fa-shopping-cart"></i></button></a>
+              <a href="#cake" class="btn btn-primary" onclick="return show('Page2','Page1');" >To Shop>>><i class="fas fa-shopping-cart"></i></a>
+              
           </div>
         </div>
 
@@ -392,7 +394,7 @@
     <!-- Cake -->
     <div id="Page2" style="display:none">
         <a href="#" onclick="return show('Page1','Page2');">Show page 1</a>
-        <div class="container">
+        <div id="cake" class="container">
             <div class="row">
                 <div class="col">
                     <h4 class="text-center mb-5 mt-3">Cake</h4>
