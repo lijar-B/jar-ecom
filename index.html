@@ -26,6 +26,14 @@
       })();
     </script>
 
+<script>
+    function show(shown, hidden) {
+      document.getElementById(shown).style.display='block';
+      document.getElementById(hidden).style.display='none';
+      return false;
+    }
+</script>
+
     <style>
       .pho, .recommend{
             display: flex;
@@ -53,7 +61,7 @@
     </style>
 </head>
 <body>
-  
+      
     <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">
@@ -74,6 +82,10 @@
         </div>
     </nav>
     <div style="margin-top: 1rem; display: flex;justify-content: space-around;"><ci-search></ci-search></div>
+
+    <div id="Page1">
+        <a href="#" onclick="return show('Page2','Page1');">Show page 2</a>
+
     <div class="container mt-3">
 
         <div class="row">
@@ -364,6 +376,386 @@
 
 
     </div>
+    </div>
+
+    <!-- Cake -->
+    <div id="Page2" style="display:none">
+        <a href="#" onclick="return show('Page1','Page2');">Show page 1</a>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h4 class="text-center mb-5 mt-3">Cake</h4>
+                    <!-- 1 -->
+                    <div class="card" style="width: 21rem; margin: auto;">
+                        <img src="img/ (90).jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Chocolate Cake  3500Ks</h5>
+                            <p class="card-text">မွေးနေ့လို နေ့မျိုးမဟုတ်ပေမယ့် ကိတ်ကို စားရတာ ကြိုက်တဲ့သူတွေအတွက် တယောက်တည်းလည်း စားလို့ရ၊ ချစ်သူလေးနဲ့လည်း စားလို့ရမယ့် Mini Cake လေးဖြစ်ပါတယ်...(Read More ကို နှိပ်ပါ)</p>
+                            <div class="hstack gap-3">
+                                <div class="bg-light border"><a href="order.html" class="btn  btn-primary action"
+                                         >မှာယူရန်</a></div>
+                                <div class="bg-light border"><a href="tel:09421219435" class="btn  btn-primary action"
+                                         >Call<i style="margin-left: 10px;"
+                                            class="fas fa-phone"></i></a></div>
+                                <div class="bg-light border"><button class="btn  btn-primary action" type="button"
+                                        data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight1"
+                                        aria-controls="offcanvasRight"  >
+                                        Read More
+                                    </button></div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight1"
+                        aria-labelledby="offcanvasRightLabel">
+                        <div class="offcanvas-header">
+                            <h5 id="offcanvasRightLabel">Cake1</h5>
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <div class="vd ratio ratio-16x9"><iframe width="560" height="315" src="https://www.youtube.com/embed/FPE0BK8jkLI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                            <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit vero
+                            modi
+                            eligendi, quae distinctio eaque expedita veniam iure libero dolores necessitatibus nemo aperiam
+                            praesentium
+                            id culpa ducimus in, voluptatibus, maiores aliquam ut!
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- 2 -->
+                    <div class="card" style="width: 21rem; margin: auto;">
+                        <img src="img/ (91).jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Milk Choco Cake 2000Ks</h5>ချစ်ရသူကို ကဗျာဆန်ဆန် Choco Cake လေးနဲ့ ကိုယ့်ရဲ့ ချစ်ခြင်းမေတ္တာကို ပြသချင်သူတွေ၊ ကိုယ်တိုင်က ချောကလက်Favoriteတယောက်ဖြစ်တဲ့သူတွေအတွက် Milk Choco Cake...(Read Moreကို နှိပ်ပါ)</p>
+                            <div class="hstack gap-3">
+                                <div class="bg-light border"><a href="order.html" class="btn btn-primary action"
+                                          >မှာယူရန်</a></div>
+                                <div class="bg-light border"><a href="tel:09421219435" class="btn btn-primary action"
+                                          >Call<i style="margin-left: 10px;"
+                                            class="fas fa-phone"></i></a></div>
+                                <div class="bg-light border"><button class="btn btn-primary action" type="button"
+                                        data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight2"
+                                        aria-controls="offcanvasRight"   >
+                                        Read More
+                                    </button></div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight2"
+                        aria-labelledby="offcanvasRightLabel">
+                        <div class="offcanvas-header">
+                            <h5 id="offcanvasRightLabel">Cake2</h5>
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit vero
+                            modi
+                            eligendi, quae distinctio eaque expedita veniam iure libero dolores necessitatibus nemo aperiam
+                            praesentium
+                            id culpa ducimus in, voluptatibus, maiores aliquam ut!</div>
+                    </div>
+    
+                    <!-- 3 -->
+                    <div class="card" style="width: 21rem; margin: auto;">
+                        <img src="img/ (92).jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Chocolate and Strawberry Cake   2500Ks</h5>
+                            <p class="card-text">Cakeရဲ့ နူးညံ့တဲ့ အရသာ၊ ချောကလက်အရသာ အပြည့်အဝနဲ့ စတော်ဘယ်ရီသီးလေးရဲ့ အရသာကို ကိုက်လိုက်တာနဲ့ တခါတည်းခံစားလိုက်နိုင်ဖို့အတွက် Chocolate and Strawberry Cake...(Read Moreကို နှိပ်ပါ)</p>
+                            <div class="hstack gap-3">
+                                <div class="bg-light border"><a href="order.html" class="btn  btn-primary action"
+                                         >မှာယူရန်</a></div>
+                                <div class="bg-light border"><a href="tel:09421219435" class="btn  btn-primary action"
+                                         >Call<i style="margin-left: 10px;"
+                                            class="fas fa-phone"></i></a></div>
+                                <div class="bg-light border"><button class="btn  btn-primary action" type="button"
+                                        data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight3"
+                                        aria-controls="offcanvasRight"  >
+                                        Read More
+                                    </button></div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight3"
+                        aria-labelledby="offcanvasRightLabel">
+                        <div class="offcanvas-header">
+                            <h5 id="offcanvasRightLabel">Cake3</h5>
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit vero
+                            modi
+                            eligendi, quae distinctio eaque expedita veniam iure libero dolores necessitatibus nemo aperiam
+                            praesentium
+                            id culpa ducimus in, voluptatibus, maiores aliquam ut!</div>
+                    </div>
+    
+                    <!-- 4 -->
+                    <div class="card" style="width: 21rem; margin: auto;">
+                        <img src="img/ (93).jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title"></h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                                the card's
+                                content.</p>
+                            <div class="hstack gap-3">
+                                <div class="bg-light border"><a href="order.html" class="btn  btn-primary action"
+                                         >မှာယူရန်</a></div>
+                                <div class="bg-light border"><a href="tel:09421219435" class="btn  btn-primary action"
+                                         >Call<i style="margin-left: 10px;"
+                                            class="fas fa-phone"></i></a></div>
+                                <div class="bg-light border"><button class="btn  btn-primary action" type="button"
+                                        data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight4"
+                                        aria-controls="offcanvasRight"  >
+                                        Read More
+                                    </button></div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight4"
+                        aria-labelledby="offcanvasRightLabel">
+                        <div class="offcanvas-header">
+                            <h5 id="offcanvasRightLabel">Cake4</h5>
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit vero
+                            modi
+                            eligendi, quae distinctio eaque expedita veniam iure libero dolores necessitatibus nemo aperiam
+                            praesentium
+                            id culpa ducimus in, voluptatibus, maiores aliquam ut!</div>
+                    </div>
+    
+                    <!-- 5 -->
+                    <div class="card" style="width: 21rem; margin: auto;">
+                        <img src="img/ (94).jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                                the card's
+                                content.</p>
+                            <div class="hstack gap-3">
+                                <div class="bg-light border"><a href="order.html" class="btn  btn-primary action"
+                                         >မှာယူရန်</a></div>
+                                <div class="bg-light border"><a href="tel:09421219435" class="btn  btn-primary action"
+                                         >Call<i style="margin-left: 10px;"
+                                            class="fas fa-phone"></i></a></div>
+                                <div class="bg-light border"><button class="btn  btn-primary action" type="button"
+                                        data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight5"
+                                        aria-controls="offcanvasRight"  >
+                                        Read More
+                                    </button></div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight5"
+                        aria-labelledby="offcanvasRightLabel">
+                        <div class="offcanvas-header">
+                            <h5 id="offcanvasRightLabel">Cake5</h5>
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit vero
+                            modi
+                            eligendi, quae distinctio eaque expedita veniam iure libero dolores necessitatibus nemo aperiam
+                            praesentium
+                            id culpa ducimus in, voluptatibus, maiores aliquam ut!</div>
+                    </div>
+    
+                    <!-- 6 -->
+                    <div class="card" style="width: 21rem; margin: auto;">
+                        <img src="img/ (95).jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                                the card's
+                                content.</p>
+                            <div class="hstack gap-3">
+                                <div class="bg-light border"><a href="order.html" class="btn  btn-primary action"
+                                         >မှာယူရန်</a></div>
+                                <div class="bg-light border"><a href="tel:09421219435" class="btn  btn-primary action"
+                                         >Call<i style="margin-left: 10px;"
+                                            class="fas fa-phone"></i></a></div>
+                                <div class="bg-light border"><button class="btn  btn-primary action" type="button"
+                                        data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight6"
+                                        aria-controls="offcanvasRight"  >
+                                        Read More
+                                    </button></div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight6"
+                        aria-labelledby="offcanvasRightLabel">
+                        <div class="offcanvas-header">
+                            <h5 id="offcanvasRightLabel">Cake6</h5>
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit vero
+                            modi
+                            eligendi, quae distinctio eaque expedita veniam iure libero dolores necessitatibus nemo aperiam
+                            praesentium
+                            id culpa ducimus in, voluptatibus, maiores aliquam ut!</div>
+                    </div>
+    
+                    <!-- 7 -->
+                    <div class="card" style="width: 21rem; margin: auto;">
+                        <img src="img/ (20).jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                                the card's
+                                content.</p>
+                            <div class="hstack gap-3">
+                                <div class="bg-light border"><a href="order.html" class="btn  btn-primary action"
+                                         >မှာယူရန်</a></div>
+                                <div class="bg-light border"><a href="tel:09421219435" class="btn  btn-primary action"
+                                         >Call<i style="margin-left: 10px;"
+                                            class="fas fa-phone"></i></a></div>
+                                <div class="bg-light border"><button class="btn  btn-primary action" type="button"
+                                        data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight7"
+                                        aria-controls="offcanvasRight"  >
+                                        Read More
+                                    </button></div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight7"
+                        aria-labelledby="offcanvasRightLabel">
+                        <div class="offcanvas-header">
+                            <h5 id="offcanvasRightLabel">Cake7</h5>
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit vero
+                            modi
+                            eligendi, quae distinctio eaque expedita veniam iure libero dolores necessitatibus nemo aperiam
+                            praesentium
+                            id culpa ducimus in, voluptatibus, maiores aliquam ut!</div>
+                    </div>
+    
+                    <!-- 8 -->
+                    <div id="cake8" class="card" style="width: 21rem; margin: auto;">
+                        <img src="img/ (16).jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                                the card's
+                                content.</p>
+                            <div class="hstack gap-3">
+                                <div class="bg-light border"><a href="order.html" class="btn  btn-primary action"
+                                         >မှာယူရန်</a></div>
+                                <div class="bg-light border"><a href="tel:09421219435" class="btn  btn-primary action"
+                                         >Call<i style="margin-left: 10px;"
+                                            class="fas fa-phone"></i></a></div>
+                                <div class="bg-light border"><button class="btn  btn-primary action" type="button"
+                                        data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight8"
+                                        aria-controls="offcanvasRight"  >
+                                        Read More
+                                    </button></div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight8"
+                        aria-labelledby="offcanvasRightLabel">
+                        <div class="offcanvas-header">
+                            <h5 id="offcanvasRightLabel">Cake8</h5>
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit vero
+                            modi
+                            eligendi, quae distinctio eaque expedita veniam iure libero dolores necessitatibus nemo aperiam
+                            praesentium
+                            id culpa ducimus in, voluptatibus, maiores aliquam ut!</div>
+                    </div>
+    
+                    <!-- 9 -->
+                    <div class="card" style="width: 21rem; margin: auto;">
+                        <img src="img/ (14).jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                                the card's
+                                content.</p>
+                            <div class="hstack gap-3">
+                                <div class="bg-light border"><a href="order.html" class="btn  btn-primary action"
+                                         >မှာယူရန်</a></div>
+                                <div class="bg-light border"><a href="tel:09421219435" class="btn  btn-primary action"
+                                         >Call<i style="margin-left: 10px;"
+                                            class="fas fa-phone"></i></a></div>
+                                <div class="bg-light border"><button class="btn  btn-primary action" type="button"
+                                        data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight9"
+                                        aria-controls="offcanvasRight"  >
+                                        Read More
+                                    </button></div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight9"
+                        aria-labelledby="offcanvasRightLabel">
+                        <div class="offcanvas-header">
+                            <h5 id="offcanvasRightLabel">Cake9</h5>
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit vero
+                            modi
+                            eligendi, quae distinctio eaque expedita veniam iure libero dolores necessitatibus nemo aperiam
+                            praesentium
+                            id culpa ducimus in, voluptatibus, maiores aliquam ut!</div>
+                    </div>
+    
+                    <!-- 10 -->
+                    <div class="card" style="width: 21rem; margin: auto;">
+                        <img src="img/ (8).jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                                the card's
+                                content.</p>
+                            <div class="hstack gap-3">
+                                <div class="bg-light border"><a href="order.html" class="btn  btn-primary action"
+                                         >မှာယူရန်</a></div>
+                                <div class="bg-light border"><a href="tel:09421219435" class="btn  btn-primary action"
+                                         >Call<i style="margin-left: 10px;"
+                                            class="fas fa-phone"></i></a></div>
+                                <div class="bg-light border"><button class="btn  btn-primary action" type="button"
+                                        data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight10"
+                                        aria-controls="offcanvasRight"  >
+                                        Read More
+                                    </button></div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight10"
+                        aria-labelledby="offcanvasRightLabel">
+                        <div class="offcanvas-header">
+                            <h5 id="offcanvasRightLabel">Cake10</h5>
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit vero
+                            modi
+                            eligendi, quae distinctio eaque expedita veniam iure libero dolores necessitatibus nemo aperiam
+                            praesentium
+                            id culpa ducimus in, voluptatibus, maiores aliquam ut!</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+
     
 
 
