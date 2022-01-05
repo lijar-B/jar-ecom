@@ -69,6 +69,19 @@
         margin: 10px;
         border-radius: 5px;
       }
+      .menu{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        position: absolute;
+        bottom: 0%;
+        width: 100%;
+        padding: 10px;
+        font-size: 1.5rem;
+        z-index: 2;
+        background: white;
+        position: fixed;
+      }
     </style>
 </head>
 <body>
@@ -92,6 +105,11 @@
           </div>
         </div>
     </nav>
+    <div class="menu">
+      <a href="#" onclick="return show('Page1','Page2');"><i class="fas fa-home"></i></a>
+      <a href="#" onclick="return show('Page2','Page1');" ><i class="fab fa-shopify"></i></a>
+      <a href="#"><i class="fas fa-undo-alt"></i></a>
+    </div>
     <div style="margin-top: 1rem; display: flex;justify-content: space-around;"><ci-search></ci-search></div>
 
     <div id="Page1">
@@ -297,7 +315,7 @@
             </div>
           </div>
           <div class="more" style="margin: auto; padding: 20px;">
-              <a href="#cake" class="btn btn-primary" onclick="return show('Page2','Page1');" >To Shop>>><i class="fas fa-shopping-cart"></i></a>
+              <a href="#Cake" class="btn btn-primary" onclick="return show('Page2','Page1');" >To Shop>>><i class="fas fa-shopping-cart"></i></a>
               
           </div>
         </div>
@@ -394,10 +412,10 @@
     <!-- Cake -->
     <div id="Page2" style="display:none">
         <a href="#" onclick="return show('Page1','Page2');">Show page 1</a>
-        <div id="cake" class="container">
+        <div class="container">
             <div class="row">
                 <div class="col">
-                    <h4 class="text-center mb-5 mt-3">Cake</h4>
+                    <h4 id="Cake" class="text-center mb-5 mt-3">Cake</h4>
                     <!-- 1 -->
                     <div class="card" style="width: 21rem; margin: auto;">
                         <img src="img/ (90).jpg" class="card-img-top" alt="...">
