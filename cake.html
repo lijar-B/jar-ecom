@@ -18,6 +18,18 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
     <title>Na Ma</title>
 
+    <script>
+        (function() {
+          var id = '8658ff98-64bd-11ec-b08f-0242ac130002';
+          var ci_search = document.createElement('script');
+          ci_search.type = 'text/javascript';
+          ci_search.async = true;
+          ci_search.src = 'https://cse.expertrec.com/api/js/ci_common.js?id=' + id;
+          var s = document.getElementsByTagName('script')[0];
+          s.parentNode.insertBefore(ci_search, s);
+        })();
+    </script>
+
     <style>
         body,
         ::after,
@@ -40,18 +52,7 @@
                 <img src="img/NaMa.png" alt="logo" width="100px" height="50px" class="d-inline-block align-text-bottom">
                 NaMa
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                    <a class="nav-link" href="#">About Us</a>
-                    <a class="nav-link" href="#">Contact</a>
-                    <a class="nav-link disabled">Disabled</a>
-                </div>
-            </div>
+            <span style="display: flex;justify-content: flex-end"><ci-search></ci-search></span>
         </div>
     </nav>
     <div class="container">
