@@ -36,6 +36,7 @@
 
     <style>
       body,
+
         ::after,
         ::before {
             box-sizing: border-box;
@@ -175,6 +176,13 @@
               aria-controls="offcanvasRight"><img class="addimg"   src="img/ (106).jpg" alt=""></a>
               <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight1"
                     aria-labelledby="offcanvasRightLabel">
+                    <div class="menu">
+                      <a href="#" data-bs-dismiss="offcanvas"
+                      aria-label="Close" onclick="return show('Page1','Page2');"><i class="fas fa-home"></i></a>
+                      <a href="#" onclick="return show('Page2','Page1');" ><i class="fab fa-shopify"></i></a>
+                      <a href="#" data-bs-dismiss="offcanvas"
+                      aria-label="Close"><i class="fas fa-undo-alt"></i></a>
+                    </div>
                     <div class="offcanvas-header">
                         <h5 id="offcanvasRightLabel">Clothe1</h5>
                         
@@ -211,8 +219,8 @@
                       <img class="reimg" src="img/ (47).jpg" alt="">
                       <img class="reimg" src="img/ (64).jpg" alt="">
                     </div>
-                    <button type="button" style="float:right;font-size: 1.5rem;font-weight: bolder;background: transparent;border: transparent;" data-bs-dismiss="offcanvas"
-                            aria-label="Close"><i style="font-size: 2rem;" class="far fa-arrow-alt-circle-left"></i></button>
+                    <!-- <button type="button" style="float:right;font-size: 1.5rem;font-weight: bolder;background: transparent;border: transparent;" data-bs-dismiss="offcanvas"
+                            aria-label="Close"><i style="font-size: 2rem;" class="far fa-arrow-alt-circle-left"></i></button> -->
                     </div>
               </div>
               
