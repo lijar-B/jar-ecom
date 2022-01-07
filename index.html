@@ -105,6 +105,37 @@
     </style>
 </head>
 <body>
+  <!-- Facebook messenger chat plugin -->
+  <!-- Messenger Chat Plugin Code -->
+  <div id="fb-root"></div>
+
+  <!-- Your Chat Plugin code -->
+  <div id="fb-customer-chat" class="fb-customerchat">
+  </div>
+
+  <script>
+    var chatbox = document.getElementById('fb-customer-chat');
+    chatbox.setAttribute("page_id", "108286378398611");
+    chatbox.setAttribute("attribution", "biz_inbox");
+  </script>
+
+  <!-- Your SDK code -->
+  <script>
+    window.fbAsyncInit = function() {
+      FB.init({
+        xfbml            : true,
+        version          : 'v12.0'
+      });
+    };
+
+    (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
       
     <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
         <div class="container-fluid">
@@ -220,7 +251,7 @@
                       <div class="bg-light border"><a href="order.html" class="btn btn-primary action"
                                >မှာယူရန်</a></div>
                       <div class="bg-light border"><a href="tel:09421219435" class="btn btn-primary action"
-                               >Call<i style="margin-left: 10px;"
+                               >ဖုန်း<i style="margin-left: 10px;"
                                   class="fas fa-phone"></i></a>
                       </div>
                       
@@ -284,7 +315,7 @@
                       <div class="bg-light border"><a href="order.html" class="btn btn-primary action"
                                >မှာယူရန်</a></div>
                       <div class="bg-light border"><a href="tel:09421219435" class="btn btn-primary action"
-                               >Call<i style="margin-left: 10px;"
+                               >ဖုန်း<i style="margin-left: 10px;"
                                   class="fas fa-phone"></i></a>
                       </div>
                       
@@ -348,7 +379,7 @@
                       <div class="bg-light border"><a href="order.html" class="btn btn-primary action"
                                >မှာယူရန်</a></div>
                       <div class="bg-light border"><a href="tel:09421219435" class="btn btn-primary action"
-                               >Call<i style="margin-left: 10px;"
+                               >ဖုန်း<i style="margin-left: 10px;"
                                   class="fas fa-phone"></i></a>
                       </div>
                       
@@ -412,7 +443,7 @@
                       <div class="bg-light border"><a href="order.html" class="btn btn-primary action"
                                >မှာယူရန်</a></div>
                       <div class="bg-light border"><a href="tel:09421219435" class="btn btn-primary action"
-                               >Call<i style="margin-left: 10px;"
+                               >ဖုန်း<i style="margin-left: 10px;"
                                   class="fas fa-phone"></i></a>
                       </div>
                       
@@ -476,7 +507,7 @@
                       <div class="bg-light border"><a href="order.html" class="btn btn-primary action"
                                >မှာယူရန်</a></div>
                       <div class="bg-light border"><a href="tel:09421219435" class="btn btn-primary action"
-                               >Call<i style="margin-left: 10px;"
+                               >ဖုန်း<i style="margin-left: 10px;"
                                   class="fas fa-phone"></i></a>
                       </div>
                       
@@ -540,7 +571,7 @@
                       <div class="bg-light border"><a href="order.html" class="btn btn-primary action"
                                >မှာယူရန်</a></div>
                       <div class="bg-light border"><a href="tel:09421219435" class="btn btn-primary action"
-                               >Call<i style="margin-left: 10px;"
+                               >ဖုန်း<i style="margin-left: 10px;"
                                   class="fas fa-phone"></i></a>
                       </div>
                       
@@ -757,7 +788,7 @@
                                 <div class="bg-light border"><a href="order.html" class="btn  btn-primary action"
                                          >မှာယူရန်</a></div>
                                 <div class="bg-light border"><a href="tel:09421219435" class="btn  btn-primary action"
-                                         >Call<i style="margin-left: 10px;"
+                                         >ဖုန်း<i style="margin-left: 10px;"
                                             class="fas fa-phone"></i></a></div>
                                 <div class="bg-light border"><button class="btn  btn-primary action" type="button"
                                         data-bs-toggle="offcanvas" data-bs-target="#offcanvasRightb1"
@@ -795,7 +826,7 @@
                                 <div class="bg-light border"><a href="order.html" class="btn btn-primary action"
                                           >မှာယူရန်</a></div>
                                 <div class="bg-light border"><a href="tel:09421219435" class="btn btn-primary action"
-                                          >Call<i style="margin-left: 10px;"
+                                          >ဖုန်း<i style="margin-left: 10px;"
                                             class="fas fa-phone"></i></a></div>
                                 <div class="bg-light border"><button class="btn btn-primary action" type="button"
                                         data-bs-toggle="offcanvas" data-bs-target="#offcanvasRightb2"
@@ -830,7 +861,7 @@
                                 <div class="bg-light border"><a href="order.html" class="btn  btn-primary action"
                                          >မှာယူရန်</a></div>
                                 <div class="bg-light border"><a href="tel:09421219435" class="btn  btn-primary action"
-                                         >Call<i style="margin-left: 10px;"
+                                         >ဖုန်း<i style="margin-left: 10px;"
                                             class="fas fa-phone"></i></a></div>
                                 <div class="bg-light border"><button class="btn  btn-primary action" type="button"
                                         data-bs-toggle="offcanvas" data-bs-target="#offcanvasRightb3"
@@ -867,7 +898,7 @@
                                 <div class="bg-light border"><a href="order.html" class="btn  btn-primary action"
                                          >မှာယူရန်</a></div>
                                 <div class="bg-light border"><a href="tel:09421219435" class="btn  btn-primary action"
-                                         >Call<i style="margin-left: 10px;"
+                                         >ဖုန်း<i style="margin-left: 10px;"
                                             class="fas fa-phone"></i></a></div>
                                 <div class="bg-light border"><button class="btn  btn-primary action" type="button"
                                         data-bs-toggle="offcanvas" data-bs-target="#offcanvasRightb4"
@@ -904,7 +935,7 @@
                                 <div class="bg-light border"><a href="order.html" class="btn  btn-primary action"
                                          >မှာယူရန်</a></div>
                                 <div class="bg-light border"><a href="tel:09421219435" class="btn  btn-primary action"
-                                         >Call<i style="margin-left: 10px;"
+                                         >ဖုန်း<i style="margin-left: 10px;"
                                             class="fas fa-phone"></i></a></div>
                                 <div class="bg-light border"><button class="btn  btn-primary action" type="button"
                                         data-bs-toggle="offcanvas" data-bs-target="#offcanvasRightb5"
@@ -941,7 +972,7 @@
                                 <div class="bg-light border"><a href="order.html" class="btn  btn-primary action"
                                          >မှာယူရန်</a></div>
                                 <div class="bg-light border"><a href="tel:09421219435" class="btn  btn-primary action"
-                                         >Call<i style="margin-left: 10px;"
+                                         >ဖုန်း<i style="margin-left: 10px;"
                                             class="fas fa-phone"></i></a></div>
                                 <div class="bg-light border"><button class="btn  btn-primary action" type="button"
                                         data-bs-toggle="offcanvas" data-bs-target="#offcanvasRightb6"
@@ -978,7 +1009,7 @@
                                 <div class="bg-light border"><a href="order.html" class="btn  btn-primary action"
                                          >မှာယူရန်</a></div>
                                 <div class="bg-light border"><a href="tel:09421219435" class="btn  btn-primary action"
-                                         >Call<i style="margin-left: 10px;"
+                                         >ဖုန်း<i style="margin-left: 10px;"
                                             class="fas fa-phone"></i></a></div>
                                 <div class="bg-light border"><button class="btn  btn-primary action" type="button"
                                         data-bs-toggle="offcanvas" data-bs-target="#offcanvasRightb7"
@@ -1015,7 +1046,7 @@
                                 <div class="bg-light border"><a href="order.html" class="btn  btn-primary action"
                                          >မှာယူရန်</a></div>
                                 <div class="bg-light border"><a href="tel:09421219435" class="btn  btn-primary action"
-                                         >Call<i style="margin-left: 10px;"
+                                         >ဖုန်း<i style="margin-left: 10px;"
                                             class="fas fa-phone"></i></a></div>
                                 <div class="bg-light border"><button class="btn  btn-primary action" type="button"
                                         data-bs-toggle="offcanvas" data-bs-target="#offcanvasRightb8"
@@ -1052,7 +1083,7 @@
                                 <div class="bg-light border"><a href="order.html" class="btn  btn-primary action"
                                          >မှာယူရန်</a></div>
                                 <div class="bg-light border"><a href="tel:09421219435" class="btn  btn-primary action"
-                                         >Call<i style="margin-left: 10px;"
+                                         >ဖုန်း<i style="margin-left: 10px;"
                                             class="fas fa-phone"></i></a></div>
                                 <div class="bg-light border"><button class="btn  btn-primary action" type="button"
                                         data-bs-toggle="offcanvas" data-bs-target="#offcanvasRightb9"
@@ -1089,7 +1120,7 @@
                                 <div class="bg-light border"><a href="order.html" class="btn  btn-primary action"
                                          >မှာယူရန်</a></div>
                                 <div class="bg-light border"><a href="tel:09421219435" class="btn  btn-primary action"
-                                         >Call<i style="margin-left: 10px;"
+                                         >ဖုန်း<i style="margin-left: 10px;"
                                             class="fas fa-phone"></i></a></div>
                                 <div class="bg-light border"><button class="btn  btn-primary action" type="button"
                                         data-bs-toggle="offcanvas" data-bs-target="#offcanvasRightb10"
