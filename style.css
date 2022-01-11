@@ -13,12 +13,7 @@
     .action {
       font-size: 0.8rem;
     }
-    .cloth{
-      display: flex;
-      flex-direction: row;
-      overflow-y: hidden;
-      overflow-x: auto;
-    }
+    
     .cardimg{
       width: 18rem;
       height: 15rem;
@@ -84,6 +79,21 @@
       flex-direction: row;
       overflow-x: auto;
       overflow-y: hidden;
+    }
+    .shopshowcase{
+      display: flex;
+      flex-direction: row;
+      overflow-y: hidden;
+      overflow-x: auto;
+    }
+    .toshopmore{
+      background: darkgray;padding: 0 20px;text-decoration: none;
+    }
+    .more-text{
+      position:relative;top: 50%;transform: translateY(-50%);
+    }
+    .toShopButton{
+      text-align: center; padding: 20px;
     }
 
     .offcanvas-end {
