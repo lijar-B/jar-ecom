@@ -71,14 +71,15 @@
       height: 6rem;
       margin: 1rem 0 1rem 0;
     }
-
+/* recently added */
     .recently-added {
-      background-color: #548CFF;
+      background-color: #fa8643;
       padding: 15px;
       display: flex;
       flex-direction: row;
       overflow-x: auto;
       overflow-y: hidden;
+      color: white;
     }
     .shopshowcase{
       display: flex;
@@ -90,11 +91,23 @@
       background: darkgray;padding: 0 20px;text-decoration: none;
     }
     .more-text{
-      position:relative;top: 50%;transform: translateY(-50%);
+      position:relative;top: 50%;transform: translateY(-50%);color: #fa8643;
     }
     .toShopButton{
       text-align: center; padding: 20px;
     }
+    .shopname{
+      margin-left: 1.5rem;
+      background-color: #fa8643;
+      width: 20rem;
+      padding: 1rem;
+      margin: 1rem;
+      color: white;
+      border-radius: 10px;
+      
+    }
+
+    /*  */
 
     .offcanvas-end {
       padding-bottom: 1.5rem;
