@@ -12,6 +12,9 @@
 
     .action {
       font-size: 0.8rem;
+      color: white;
+      background: #fa8643;
+      border: 1px solid #fa8643;
     }
     
     .cardimg{
@@ -108,7 +111,9 @@
     }
 
     /* All Pages */
-
+  .fa-shopify, .fa-undo-alt, .fa-home{
+    color: #fa8643;
+  }
 
     .offcanvas-end {
       padding-bottom: 1.5rem;
