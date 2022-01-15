@@ -144,6 +144,19 @@
     }
 
     /* Cosmetics */
+    .shop-card{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: #fa8643;
+      padding: 5px 0;
+  }
+  .shop-photo{
+      border-radius: 15px ;
+      border: 1px solid white;
+      width: 23rem;
+      height: 15rem;             
+  }
     .shop-name{
       color: white;
       position: relative;
