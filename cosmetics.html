@@ -30,6 +30,10 @@
         })();
       </script>
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
     <style>
         body,
         ::after,
@@ -46,6 +50,22 @@
             background: #fa8643;
             border: 1px solid #fa8643;
         }
+        .shop-card{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: #fa8643;
+            padding: 5px 0;
+        }
+        .shop-photo{
+            border-radius: 15px ;
+            border: 3px solid #fa8643;
+            width: 23rem;
+            height: 15rem;         
+
+            
+        }
+        
     </style>
 </head>
 
@@ -103,10 +123,18 @@
       </div>
     <div class="container">
         <div class="row">
+            <div class="shop-card col">
+                <div class="shop-card">
+                    <img class="shop-photo" src="img/shop-clothing (2).jpg" alt="">
+                    <span class="shop-name">Sky Fashion</span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
             <div class="col">
-                <h4 class="text-center mb-5 mt-3">Cosmetics</h4>
+                <!-- <h4 class="text-center mb-5 mt-3">Cosmetics</h4> -->
                 <!-- 1 -->
-                <div class="card" style="width: 21rem; margin: auto;">
+                <div class="card mt-5" style="width: 21rem; margin: auto;">
                     <img src="img/ (100).jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title"> </h5>
