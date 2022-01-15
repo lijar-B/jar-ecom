@@ -24,12 +24,12 @@ function show(shown, hidden) {
 document.addEventListener("DOMContentLoaded", function(){
     window.addEventListener('scroll', function() {
         if (window.scrollY > 50) {
-          document.getElementById('categoryBar').classList.add('fixed-top');
+          document.getElementById('categoryBar').classList.add('fixed-bottom');
           // add padding top to show content behind navbar
           navbar_height = document.querySelector('.category-bar').offsetHeight;
           document.body.style.paddingTop = navbar_height + 'px';
         } else {
-          document.getElementById('categoryBar').classList.remove('fixed-top');
+          document.getElementById('categoryBar').classList.remove('fixed-bottom');
            // remove padding top from body
           document.body.style.paddingTop = '0';
         } 
