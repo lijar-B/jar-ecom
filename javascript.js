@@ -12,3 +12,10 @@ for (var i = 0; i < btns.length; i++) {
     this.className += " active";
   });
 }
+
+// switch pages within a single html file
+function show(shown, hidden) {
+  document.getElementById(shown).style.display='block';
+  document.getElementById(hidden).style.display='none';
+  return false;
+}

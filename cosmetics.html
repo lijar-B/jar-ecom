@@ -151,9 +151,10 @@
         </div>
         <div class="row">
             <div class="category-bar col" id="categoryBar">
-                <a href="#"><i class="fas fa-search"></i></a>
-                <a href="#"><h4 class="category active">Make Up</h4></a>
-                <a href="#"><h4 class="category">Lip Stick</h4></a>
+                <!-- <a href="#"><i class="fas fa-search"></i></a> -->
+                <!-- <a href="#" class="btn btn-primary" onclick="return show('Page2','Page1');">Show page 2</a> -->
+                <a href="#" onclick="return show('makeUp','lipStick');"><h4 class="category active">Make Up</h4></a>
+                <a href="#" onclick="return show('lipStick','makeUp');"><h4 class="category">Lip Stick</h4></a>
                 <a href="#"><h4 class="category">Face Wash</h4></a>
                 <a href="#"><h4 class="category">Moiturer</h4></a>
                 <a href="#"><h4 class="category">Moiturer</h4></a>
@@ -164,7 +165,7 @@
             <div class="col">
                 <!-- <h4 class="text-center mb-5 mt-3">Cosmetics</h4> -->
                 <!-- 1 -->
-                <div class="card mt-5" style="width: 21rem; margin: auto;">
+                <div id="lipStick" class="card mt-5" style="width: 21rem; margin: auto;">
                     <img src="img/ (100).jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title"> </h5>
@@ -242,7 +243,7 @@
                 </div>
 
                 <!-- 2 -->
-                <div class="card" style="width: 21rem; margin: auto;">
+                <div id="makeUp" class="card" style="width: 21rem; margin: auto;">
                     <img src="img/ (99).jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title"> </h5>
@@ -320,7 +321,7 @@
                 </div>
 
                 <!-- 3 -->
-                <div class="card" style="width: 21rem; margin: auto;">
+                <div id="eyeLiner" class="card" style="width: 21rem; margin: auto;">
                     <img src="img/ (98).jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title"> </h5>
