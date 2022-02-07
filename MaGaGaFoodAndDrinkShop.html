@@ -94,6 +94,21 @@
             text-decoration: none;
 
         }
+        .card-body{
+            display: flex;
+            flex: row;
+            justify-content: space-between;
+            border: 1px solid #fa8643;
+        }
+        .item-price{
+            align-items: center;
+            color: #fa8643;
+        }
+        .card-action{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
     </style>
 </head>
 
@@ -166,7 +181,7 @@
                 <!-- <a href="#"><i class="fas fa-search"></i></a> -->
                 <!-- <a href="#" class="btn btn-primary" onclick="return show('Page2','Page1');">Show page 2</a> -->
                 
-                <a href="#" onclick="return show('Salad','Drink','Flower','moisture');"><h4 class="category  active">အထောင်းစုံ</h4></a>
+                <a href="#" onclick="return show('Salad','Drink','Flower','moisture');"><h4 class="category">အထောင်းစုံ</h4></a>
                 <a href="#" onclick="return show('Drink','Salad','Flower','moisture');"><h4 class="category">အအေးမျိုးစုံ</h4></a>
                 <a href="#" onclick="return show('Flower','Salad','Drink','moisture');"><h4 class="category">ပန်းစီး</h4></a>
                 
@@ -182,19 +197,22 @@
                         <div class="card mt-50" style="width: 21rem; margin: auto;">
                             <img src="img/Ma Gar Gar Food And Drink Shop/salad/salad (1).png" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title"> </h5>
-                                <p class="card-text"></p>
-                                <div class="hstack gap-3">
+                                <div class="item-price">
+                                <h5 class="card-title">မူရောထောင်း </h5>
+                                <p class="card-text">1000Ks</p>
+                                <span>ကုဒ်-s4</span>
+                                </div>
+                                <div class="hstack gap-3 card-action">
                                     <div class="bg-light border"><a href="https://www.messenger.com/t/108286378398611/?messaging_source=source%3Apages%3Amessage_shortlink" class="btn btn-primary action"
                                              >မှာယူရန်</a></div>
                                     <div class="bg-light border"><a href="tel:09455406870" class="btn btn-primary action"
                                              >ဖုန်း<i style="margin-left: 10px;"
                                                 class="fas fa-phone"></i></a></div>
-                                    <div class="bg-light border"><button class="btn btn-primary action" type="button"
+                                    <!-- <div class="bg-light border"><button class="btn btn-primary action" type="button"
                                             data-bs-toggle="offcanvas" data-bs-target="#offcanvasRightSalad1"
                                             aria-controls="offcanvasRight"  >
                                             ပစ္စည်းအကြောင်း
-                                        </button></div>
+                                        </button></div> -->
                                 </div>
                             </div>
                         </div>
@@ -260,19 +278,22 @@
                         <div class="card" style="width: 21rem; margin: auto;">
                         <img src="img/Ma Gar Gar Food And Drink Shop/salad/salad (2).png" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title"> </h5>
-                            <p class="card-text"></p>
-                            <div class="hstack gap-3">
+                            <div class="item-price">
+                            <h5 class="card-title">သရက်သီးထောင်း </h5>
+                            <p class="card-text">1000</p>
+                            <span>ကုဒ်-s0</span>
+                            </div>
+                            <div class="hstack gap-3 card-action">
                                 <div class="bg-light border"><a href="https://www.messenger.com/t/108286378398611/?messaging_source=source%3Apages%3Amessage_shortlink" class="btn btn-primary action"
                                          >မှာယူရန်</a></div>
                                 <div class="bg-light border"><a href="tel:09455406870" class="btn btn-primary action"
                                          >ဖုန်း<i style="margin-left: 10px;"
                                             class="fas fa-phone"></i></a></div>
-                                <div class="bg-light border"><button class="btn btn-primary action" type="button"
+                                <!-- <div class="bg-light border"><button class="btn btn-primary action" type="button"
                                         data-bs-toggle="offcanvas" data-bs-target="#offcanvasRightSalad2"
                                         aria-controls="offcanvasRight"  >
                                         ပစ္စည်းအကြောင်း
-                                    </button></div>
+                                    </button></div> -->
                             </div>
                         </div>
                         </div>
@@ -338,19 +359,22 @@
                         <div class="card" style="width: 21rem; margin: auto;">
                         <img src="img/Ma Gar Gar Food And Drink Shop/salad/salad (3).png" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title"> </h5>
-                            <p class="card-text"></p>
-                            <div class="hstack gap-3">
+                            <div class="item-price">
+                            <h5 class="card-title">ပင်စိမ်းသီး‌ထောင်း </h5>
+                            <p class="card-text">1000Ks</p>
+                            <span>ကုဒ်-s3</span>
+                            </div>
+                            <div class="hstack gap-3 card-action">
                                 <div class="bg-light border"><a href="https://www.messenger.com/t/108286378398611/?messaging_source=source%3Apages%3Amessage_shortlink" class="btn btn-primary action"
                                          >မှာယူရန်</a></div>
                                 <div class="bg-light border"><a href="tel:09455406870" class="btn btn-primary action"
                                          >ဖုန်း<i style="margin-left: 10px;"
                                             class="fas fa-phone"></i></a></div>
-                                <div class="bg-light border"><button class="btn btn-primary action" type="button"
+                                <!-- <div class="bg-light border"><button class="btn btn-primary action" type="button"
                                         data-bs-toggle="offcanvas" data-bs-target="#offcanvasRightSalad3"
                                         aria-controls="offcanvasRight"  >
                                         ပစ္စည်းအကြောင်း
-                                    </button></div>
+                                    </button></div> -->
                             </div>
                         </div>
                         </div>
@@ -416,19 +440,22 @@
                         <div class="card" style="width: 21rem; margin: auto;">
                         <img src="img/Ma Gar Gar Food And Drink Shop/salad/salad (4).png" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title"> </h5>
-                            <p class="card-text"></p>
-                            <div class="hstack gap-3">
+                            <div class="item-price">
+                            <h5 class="card-title">ကြက်ကြောထောင်း </h5>
+                            <p class="card-text">1500Ks</p>
+                            <span>ကုဒ်-s1</span>
+                            </div>
+                            <div class="hstack gap-3 card-action">
                                 <div class="bg-light border"><a href="https://www.messenger.com/t/108286378398611/?messaging_source=source%3Apages%3Amessage_shortlink" class="btn btn-primary action"
                                          >မှာယူရန်</a></div>
                                 <div class="bg-light border"><a href="tel:09455406870" class="btn btn-primary action"
                                          >ဖုန်း<i style="margin-left: 10px;"
                                             class="fas fa-phone"></i></a></div>
-                                <div class="bg-light border"><button class="btn btn-primary action" type="button"
+                                <!-- <div class="bg-light border"><button class="btn btn-primary action" type="button"
                                         data-bs-toggle="offcanvas" data-bs-target="#offcanvasRightSalad4"
                                         aria-controls="offcanvasRight"  >
                                         ပစ္စည်းအကြောင်း
-                                    </button></div>
+                                    </button></div> -->
                             </div>
                         </div>
                         </div>
@@ -494,19 +521,22 @@
                     <div class="card" style="width: 21rem; margin: auto;">
                         <img src="img/Ma Gar Gar Food And Drink Shop/salad/salad (5).png" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title"> </h5>
-                            <p class="card-text"></p>
-                            <div class="hstack gap-3">
+                            <div class="item-price">
+                            <h5 class="card-title">သခွါးသီးထောင်း </h5>
+                            <p class="card-text">1000Ks</p>
+                            <span>ကုဒ်-s5</span>
+                            </div>
+                            <div class="hstack gap-3 card-action">
                                 <div class="bg-light border"><a href="https://www.messenger.com/t/108286378398611/?messaging_source=source%3Apages%3Amessage_shortlink" class="btn btn-primary action"
                                          >မှာယူရန်</a></div>
                                 <div class="bg-light border"><a href="tel:09455406870" class="btn btn-primary action"
                                          >ဖုန်း<i style="margin-left: 10px;"
                                             class="fas fa-phone"></i></a></div>
-                                <div class="bg-light border"><button class="btn btn-primary action" type="button"
+                                <!-- <div class="bg-light border"><button class="btn btn-primary action" type="button"
                                         data-bs-toggle="offcanvas" data-bs-target="#offcanvasRightSalad5"
                                         aria-controls="offcanvasRight"  >
                                         ပစ္စည်းအကြောင်း
-                                    </button></div>
+                                    </button></div> -->
                             </div>
                         </div>
                     </div>
@@ -572,19 +602,22 @@
                     <div class="card" style="width: 21rem; margin: auto;">
                         <img src="img/Ma Gar Gar Food And Drink Shop/salad/salad (6).png" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title"> </h5>
-                            <p class="card-text"></p>
-                            <div class="hstack gap-3">
+                            <div class="item-price">
+                            <h5 class="card-title">သဘ်ောသီးထောင်း </h5>
+                            <p class="card-text">1000</p>
+                            <span>ကုဒ်-s2</span>
+                            </div>
+                            <div class="hstack gap-3 card-action">
                                 <div class="bg-light border"><a href="https://www.messenger.com/t/108286378398611/?messaging_source=source%3Apages%3Amessage_shortlink" class="btn btn-primary action"
                                          >မှာယူရန်</a></div>
                                 <div class="bg-light border"><a href="tel:09455406870" class="btn btn-primary action"
                                          >ဖုန်း<i style="margin-left: 10px;"
                                             class="fas fa-phone"></i></a></div>
-                                <div class="bg-light border"><button class="btn btn-primary action" type="button"
+                                <!-- <div class="bg-light border"><button class="btn btn-primary action" type="button"
                                         data-bs-toggle="offcanvas" data-bs-target="#offcanvasRightSalad6"
                                         aria-controls="offcanvasRight"  >
                                         ပစ္စည်းအကြောင်း
-                                    </button></div>
+                                    </button></div> -->
                             </div>
                         </div>
                     </div>
@@ -655,19 +688,22 @@
                     <div class="card" style="width: 21rem; margin: auto;">
                         <img src="img/Ma Gar Gar Food And Drink Shop/drink/drink (1).png" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title"> </h5>
-                            <p class="card-text"></p>
-                            <div class="hstack gap-3">
+                            <div class="item-price">
+                            <h5 class="card-title">ထောပတ်</h5>
+                            <p class="card-text">Bubble လုံးပါ-1500Ks၊ မပါ-1000Ks</p>
+                            <span>ကုဒ်-s6</span>
+                            </div>
+                            <div class="hstack gap-3 card-action">
                                 <div class="bg-light border"><a href="https://www.messenger.com/t/108286378398611/?messaging_source=source%3Apages%3Amessage_shortlink" class="btn btn-primary action"
                                          >မှာယူရန်</a></div>
                                 <div class="bg-light border"><a href="tel:09455406870" class="btn btn-primary action"
                                          >ဖုန်း<i style="margin-left: 10px;"
                                             class="fas fa-phone"></i></a></div>
-                                <div class="bg-light border"><button class="btn btn-primary action" type="button"
+                                <!-- <div class="bg-light border"><button class="btn btn-primary action" type="button"
                                         data-bs-toggle="offcanvas" data-bs-target="#offcanvasRightDrink1"
                                         aria-controls="offcanvasRight"  >
                                         ပစ္စည်းအကြောင်း
-                                    </button></div>
+                                    </button></div> -->
                             </div>
                         </div>
                     </div>
@@ -733,19 +769,22 @@
                     <div class="card" style="width: 21rem; margin: auto;">
                     <img src="img/Ma Gar Gar Food And Drink Shop/drink/drink (2).png" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title"> </h5>
-                        <p class="card-text"></p>
-                        <div class="hstack gap-3">
+                        <div class="item-price">
+                        <h5 class="card-title">Bubble Tea </h5>
+                        <p class="card-text">1500Ks</p>
+                        <span>ကုဒ်-s9</span>
+                        </div>
+                        <div class="hstack gap-3 card-action">
                             <div class="bg-light border"><a href="https://www.messenger.com/t/108286378398611/?messaging_source=source%3Apages%3Amessage_shortlink" class="btn btn-primary action"
                                      >မှာယူရန်</a></div>
                             <div class="bg-light border"><a href="tel:09455406870" class="btn btn-primary action"
                                      >ဖုန်း<i style="margin-left: 10px;"
                                         class="fas fa-phone"></i></a></div>
-                            <div class="bg-light border"><button class="btn btn-primary action" type="button"
+                            <!-- <div class="bg-light border"><button class="btn btn-primary action" type="button"
                                     data-bs-toggle="offcanvas" data-bs-target="#offcanvasRightDrink2"
                                     aria-controls="offcanvasRight"  >
                                     ပစ္စည်းအကြောင်း
-                                </button></div>
+                                </button></div> -->
                         </div>
                     </div>
                     </div>
@@ -811,19 +850,22 @@
                     <div class="card" style="width: 21rem; margin: auto;">
                     <img src="img/Ma Gar Gar Food And Drink Shop/drink/drink (3).png" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title"> </h5>
-                        <p class="card-text"></p>
-                        <div class="hstack gap-3">
+                        <div class="item-price">
+                        <h5 class="card-title">ထိုင်းတီး-Thai Tea </h5>
+                        <p class="card-text">1500KS</p>
+                        <span>ကုဒ်-s7</span>
+                        </div>
+                        <div class="hstack gap-3 card-action">
                             <div class="bg-light border"><a href="https://www.messenger.com/t/108286378398611/?messaging_source=source%3Apages%3Amessage_shortlink" class="btn btn-primary action"
                                      >မှာယူရန်</a></div>
                             <div class="bg-light border"><a href="tel:09455406870" class="btn btn-primary action"
                                      >ဖုန်း<i style="margin-left: 10px;"
                                         class="fas fa-phone"></i></a></div>
-                            <div class="bg-light border"><button class="btn btn-primary action" type="button"
+                            <!-- <div class="bg-light border"><button class="btn btn-primary action" type="button"
                                     data-bs-toggle="offcanvas" data-bs-target="#offcanvasRightDrink3"
                                     aria-controls="offcanvasRight"  >
                                     ပစ္စည်းအကြောင်း
-                                </button></div>
+                                </button></div> -->
                         </div>
                     </div>
                     </div>
@@ -889,19 +931,22 @@
                     <div class="card" style="width: 21rem; margin: auto;">
                     <img src="img/Ma Gar Gar Food And Drink Shop/drink/drink (4).png" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title"> </h5>
-                        <p class="card-text"></p>
-                        <div class="hstack gap-3">
+                        <div class="item-price">
+                        <h5 class="card-title">Red Tea</h5>
+                        <p class="card-text">1500Ks</p>
+                        <span>ကုဒ်-s8</span>
+                        </div>
+                        <div class="hstack gap-3 card-action">
                             <div class="bg-light border"><a href="https://www.messenger.com/t/108286378398611/?messaging_source=source%3Apages%3Amessage_shortlink" class="btn btn-primary action"
                                      >မှာယူရန်</a></div>
                             <div class="bg-light border"><a href="tel:09455406870" class="btn btn-primary action"
                                      >ဖုန်း<i style="margin-left: 10px;"
                                         class="fas fa-phone"></i></a></div>
-                            <div class="bg-light border"><button class="btn btn-primary action" type="button"
+                            <!-- <div class="bg-light border"><button class="btn btn-primary action" type="button"
                                     data-bs-toggle="offcanvas" data-bs-target="#offcanvasRightDrink4"
                                     aria-controls="offcanvasRight"  >
                                     ပစ္စည်းအကြောင်း
-                                </button></div>
+                                </button></div> -->
                         </div>
                     </div>
                     </div>
@@ -967,19 +1012,22 @@
                 <div class="card" style="width: 21rem; margin: auto;">
                     <img src="img/Ma Gar Gar Food And Drink Shop/drink/drink (5).png" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title"> </h5>
-                        <p class="card-text">.</p>
-                        <div class="hstack gap-3">
+                        <div class="item-price">
+                        <h5 class="card-title">သခွါးမွေး</h5>
+                        <p class="card-text">ဆော်ဒါ(Soda) ပါ-1500Ks၊ မပါ-1000Ks</p>
+                        <span>ကုဒ်-s14</span>
+                        </div>
+                        <div class="hstack gap-3 card-action">
                             <div class="bg-light border"><a href="https://www.messenger.com/t/108286378398611/?messaging_source=source%3Apages%3Amessage_shortlink" class="btn btn-primary action"
                                      >မှာယူရန်</a></div>
                             <div class="bg-light border"><a href="tel:09455406870" class="btn btn-primary action"
                                      >ဖုန်း<i style="margin-left: 10px;"
                                         class="fas fa-phone"></i></a></div>
-                            <div class="bg-light border"><button class="btn btn-primary action" type="button"
+                            <!-- <div class="bg-light border"><button class="btn btn-primary action" type="button"
                                     data-bs-toggle="offcanvas" data-bs-target="#offcanvasRightDrink5"
                                     aria-controls="offcanvasRight"  >
                                     ပစ္စည်းအကြောင်း
-                                </button></div>
+                                </button></div> -->
                         </div>
                     </div>
                 </div>
@@ -1045,19 +1093,22 @@
                 <div class="card" style="width: 21rem; margin: auto;">
                     <img src="img/Ma Gar Gar Food And Drink Shop/drink/drink (6).png" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title"> </h5>
-                        <p class="card-text">.</p>
-                        <div class="hstack gap-3">
+                        <div class="item-price">
+                        <h5 class="card-title">စပျစ်သီး </h5>
+                        <p class="card-text">ဆော်ဒါ မပါ-1000Ks၊ ပါ-1500Ks၊</p>
+                        <span>ကုဒ်-s20</span>
+                        </div>
+                        <div class="hstack gap-3 card-action">
                             <div class="bg-light border"><a href="https://www.messenger.com/t/108286378398611/?messaging_source=source%3Apages%3Amessage_shortlink" class="btn btn-primary action"
                                      >မှာယူရန်</a></div>
                             <div class="bg-light border"><a href="tel:09455406870" class="btn btn-primary action"
                                      >ဖုန်း<i style="margin-left: 10px;"
                                         class="fas fa-phone"></i></a></div>
-                            <div class="bg-light border"><button class="btn btn-primary action" type="button"
+                            <!-- <div class="bg-light border"><button class="btn btn-primary action" type="button"
                                     data-bs-toggle="offcanvas" data-bs-target="#offcanvasRightDrink6"
                                     aria-controls="offcanvasRight"  >
                                     ပစ္စည်းအကြောင်း
-                                </button></div>
+                                </button></div> -->
                         </div>
                     </div>
                 </div>
@@ -1123,19 +1174,22 @@
                 <div class="card" style="width: 21rem; margin: auto;">
                     <img src="img/Ma Gar Gar Food And Drink Shop/drink/drink (7).png" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title"> </h5>
-                        <p class="card-text">.</p>
-                        <div class="hstack gap-3">
+                        <div class="item-price">
+                        <h5 class="card-title">ပူရှိန်းပြာ </h5>
+                        <p class="card-text">ဆော်ဒါ(soda) ပါ-1500Ks၊ မပါ-1000Ks</p>
+                        <span>ကုဒ်-s11</span>
+                        </div>
+                        <div class="hstack gap-3 card-action">
                             <div class="bg-light border"><a href="https://www.messenger.com/t/108286378398611/?messaging_source=source%3Apages%3Amessage_shortlink" class="btn btn-primary action"
                                      >မှာယူရန်</a></div>
                             <div class="bg-light border"><a href="tel:09455406870" class="btn btn-primary action"
                                      >ဖုန်း<i style="margin-left: 10px;"
                                         class="fas fa-phone"></i></a></div>
-                            <div class="bg-light border"><button class="btn btn-primary action" type="button"
+                            <!-- <div class="bg-light border"><button class="btn btn-primary action" type="button"
                                     data-bs-toggle="offcanvas" data-bs-target="#offcanvasRightDrink7"
                                     aria-controls="offcanvasRight"  >
                                     ပစ္စည်းအကြောင်း
-                                </button></div>
+                                </button></div> -->
                         </div>
                     </div>
                 </div>
@@ -1201,19 +1255,22 @@
                 <div class="card" style="width: 21rem; margin: auto;">
                     <img src="img/Ma Gar Gar Food And Drink Shop/drink/drink (8).png" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title"> </h5>
-                        <p class="card-text">.</p>
-                        <div class="hstack gap-3">
+                        <div class="item-price">
+                        <h5 class="card-title">Milk Tea</h5>
+                        <p class="card-text">1500Ks</p>
+                        <span>ကုဒ်-s10</span>
+                        </div>
+                        <div class="hstack gap-3 card-action">
                             <div class="bg-light border"><a href="https://www.messenger.com/t/108286378398611/?messaging_source=source%3Apages%3Amessage_shortlink" class="btn btn-primary action"
                                      >မှာယူရန်</a></div>
                             <div class="bg-light border"><a href="tel:09455406870" class="btn btn-primary action"
                                      >ဖုန်း<i style="margin-left: 10px;"
                                         class="fas fa-phone"></i></a></div>
-                            <div class="bg-light border"><button class="btn btn-primary action" type="button"
+                            <!-- <div class="bg-light border"><button class="btn btn-primary action" type="button"
                                     data-bs-toggle="offcanvas" data-bs-target="#offcanvasRightDrink8"
                                     aria-controls="offcanvasRight"  >
                                     ပစ္စည်းအကြောင်း
-                                </button></div>
+                                </button></div> -->
                         </div>
                     </div>
                 </div>
@@ -1277,86 +1334,142 @@
 
                 <!-- Drink9 -->
                 <div class="card" style="width: 21rem; margin: auto;">
-                    <img src="img/Ma Gar Gar Food And Drink Shop/drink/drink (2).png" class="card-img-top" alt="...">
+                    <!-- <img src="img/Ma Gar Gar Food And Drink Shop/drink/drink (8).png" class="card-img-top" alt="..."> -->
                     <div class="card-body">
-                        <h5 class="card-title"> </h5>
-                        <p class="card-text">.</p>
-                        <div class="hstack gap-3">
+                        <div class="item-price">
+                        <h5 class="card-title">သရက်သီး</h5>
+                        <p class="card-text">ဆော်ဒါ မပါ-1000Ks၊ ပါ-1500Ks၊</p>
+                        <span>ကုဒ်-s12</span>
+                        </div>
+                        <div class="hstack gap-3 card-action">
                             <div class="bg-light border"><a href="https://www.messenger.com/t/108286378398611/?messaging_source=source%3Apages%3Amessage_shortlink" class="btn btn-primary action"
                                      >မှာယူရန်</a></div>
                             <div class="bg-light border"><a href="tel:09455406870" class="btn btn-primary action"
                                      >ဖုန်း<i style="margin-left: 10px;"
                                         class="fas fa-phone"></i></a></div>
-                            <div class="bg-light border"><button class="btn btn-primary action" type="button"
-                                    data-bs-toggle="offcanvas" data-bs-target="#offcanvasRightDrink9"
-                                    aria-controls="offcanvasRight"  >
-                                    ပစ္စည်းအကြောင်း
-                                </button></div>
+                            
                         </div>
                     </div>
                 </div>
-
-                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRightDrink9"
-                    aria-labelledby="offcanvasRightLabel">
-                    <div class="offcanvas-header">
-                        <h5 id="offcanvasRightLabel">အအေး</h5>
-                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
-                            aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                        <div class="pho">
-                            <img class="img" src="img/ (10).jpg" alt="">
-                            <img class="img" src="img/ (11).jpg" alt="">
-                            <img class="img" src="img/ (12).jpg" alt="">
-                            <img class="img" src="img/ (100).jpg" alt="">
-                            <img class="img" src="img/ (110).jpg" alt="">
-                            <img class="img" src="img/ (113).jpg" alt="">
-                        </div>
-                        <div class="info mt-3">
-                            <h4 style="font-weight: bold;">ဂျင်းအရှည် <span style="float: right;">15000Ks</span></h4>
-
-                            <span>မြန်မာပြည်တွင် ပြုလုပ်သည်။</span>
-                        </div>
-                        <div class="description mt-4">
-                            <p>ခရီးထွက်ချိန်ဝတ်မလား၊ ချစ်သူနဲ့ လျှောက်လည်ချိန်ဝတ်မလား၊ ဘယ်ချိန်ဝတ်ဝတ် လွတ်လပ်ပေါ့ပါးပြီး
-                                ဒီဇိုင်းမိုက်တဲ့ဂျင်းရှည်။
-                                လူကြီးလူငယ်မ‌ရွေး ဝတ်လို့ရ(အမျိုးသား)
-                                အရောင်တွေကတော့ အမဲ၊ အပြာရင့်၊ အပြာနု၊ ခဲ။
-                                sizeကတော့ 32,34,36,38,40
-                            </p>
-                        </div>
-                        <div class="more"></div>
-
-                        <div style="justify-content: center;" class="hstack gap-3">
-                            <div class="bg-light border"><a
-                                    href="https://www.messenger.com/t/108286378398611/?messaging_source=source%3Apages%3Amessage_shortlink"
-                                    class="btn btn-primary action">မှာယူရန်</a></div>
-                            <div class="bg-light border"><a href="tel:09455406870"
-                                    class="btn btn-primary action">ဖုန်း<i style="margin-left: 10px;"
-                                        class="fas fa-phone"></i></a>
-                            </div>
-
-                        </div>
-                        <span style="display: block;">Recommended</span>
-                        <div class="recommend">
-
-                            <img class="reimg" src="img/ (119).jpg" alt="">
-                            <img class="reimg" src="img/ (79).jpg" alt="">
-                            <img class="reimg" src="img/ (23).jpg" alt="">
-                            <img class="reimg" src="img/ (47).jpg" alt="">
-                            <img class="reimg" src="img/ (47).jpg" alt="">
-                            <img class="reimg" src="img/ (64).jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="menu">
-                        <a href="#" data-bs-dismiss="offcanvas" aria-label="Close"><i class="fas fa-undo-alt"></i></a>
-                      </div>
-                </div>
-
                 
+                <!-- Drink10 -->
+                <div class="card" style="width: 21rem; margin: auto;">
+                    <!-- <img src="img/Ma Gar Gar Food And Drink Shop/drink/drink (8).png" class="card-img-top" alt="..."> -->
+                    <div class="card-body">
+                        <div class="item-price">
+                        <h5 class="card-title">စတော်ဘယ်ရီ</h5>
+                        <p class="card-text">ဆော်ဒါ မပါ-1000Ks၊ ပါ-1500Ks၊</p>
+                        <span>ကုဒ်-s13</span>
+                        </div>
+                        <div class="hstack gap-3 card-action">
+                            <div class="bg-light border"><a href="https://www.messenger.com/t/108286378398611/?messaging_source=source%3Apages%3Amessage_shortlink" class="btn btn-primary action"
+                                     >မှာယူရန်</a></div>
+                            <div class="bg-light border"><a href="tel:09455406870" class="btn btn-primary action"
+                                     >ဖုန်း<i style="margin-left: 10px;"
+                                        class="fas fa-phone"></i></a></div>
+                            
+                        </div>
+                    </div>
+                </div>
 
+                <!-- Drink11 -->
+                <div class="card" style="width: 21rem; margin: auto;">
+                    <!-- <img src="img/Ma Gar Gar Food And Drink Shop/drink/drink (8).png" class="card-img-top" alt="..."> -->
+                    <div class="card-body">
+                        <div class="item-price">
+                        <h5 class="card-title">နာနတ်သီး</h5>
+                        <p class="card-text">ဆော်ဒါ မပါ-1000Ks၊ ပါ-1500Ks၊</p>
+                        <span>ကုဒ်-s15</span>
+                        </div>
+                        <div class="hstack gap-3 card-action">
+                            <div class="bg-light border"><a href="https://www.messenger.com/t/108286378398611/?messaging_source=source%3Apages%3Amessage_shortlink" class="btn btn-primary action"
+                                     >မှာယူရန်</a></div>
+                            <div class="bg-light border"><a href="tel:09455406870" class="btn btn-primary action"
+                                     >ဖုန်း<i style="margin-left: 10px;"
+                                        class="fas fa-phone"></i></a></div>
+                            
+                        </div>
+                    </div>
+                </div>
 
+                <!-- Drink12 -->
+                <div class="card" style="width: 21rem; margin: auto;">
+                    <!-- <img src="img/Ma Gar Gar Food And Drink Shop/drink/drink (8).png" class="card-img-top" alt="..."> -->
+                    <div class="card-body">
+                        <div class="item-price">
+                        <h5 class="card-title">ပင်မှည့်သီး</h5>
+                        <p class="card-text">ဆော်ဒါ မပါ-1000Ks၊ ပါ-1500Ks၊</p>
+                        <span>ကုဒ်-s16</span>
+                        </div>
+                        <div class="hstack gap-3 card-action">
+                            <div class="bg-light border"><a href="https://www.messenger.com/t/108286378398611/?messaging_source=source%3Apages%3Amessage_shortlink" class="btn btn-primary action"
+                                     >မှာယူရန်</a></div>
+                            <div class="bg-light border"><a href="tel:09455406870" class="btn btn-primary action"
+                                     >ဖုန်း<i style="margin-left: 10px;"
+                                        class="fas fa-phone"></i></a></div>
+                            
+                        </div>
+                    </div>
+                </div>
 
+                <!-- Drink13 -->
+                <div class="card" style="width: 21rem; margin: auto;">
+                    <!-- <img src="img/Ma Gar Gar Food And Drink Shop/drink/drink (8).png" class="card-img-top" alt="..."> -->
+                    <div class="card-body">
+                        <div class="item-price">
+                        <h5 class="card-title">သလဲသီး</h5>
+                        <p class="card-text">ဆော်ဒါ မပါ-1000Ks၊ ပါ-1500Ks၊</p>
+                        <span>ကုဒ်-s17</span>
+                        </div>
+                        <div class="hstack gap-3 card-action">
+                            <div class="bg-light border"><a href="https://www.messenger.com/t/108286378398611/?messaging_source=source%3Apages%3Amessage_shortlink" class="btn btn-primary action"
+                                     >မှာယူရန်</a></div>
+                            <div class="bg-light border"><a href="tel:09455406870" class="btn btn-primary action"
+                                     >ဖုန်း<i style="margin-left: 10px;"
+                                        class="fas fa-phone"></i></a></div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Drink14 -->
+                <div class="card" style="width: 21rem; margin: auto;">
+                    <!-- <img src="img/Ma Gar Gar Food And Drink Shop/drink/drink (8).png" class="card-img-top" alt="..."> -->
+                    <div class="card-body">
+                        <div class="item-price">
+                        <h5 class="card-title">လိ‌‌‌ေမ္မာ်သီး</h5>
+                        <p class="card-text">ဆော်ဒါ မပါ-1000Ks၊ ပါ-1500Ks၊</p>
+                        <span>ကုဒ်-s18</span>
+                        </div>
+                        <div class="hstack gap-3 card-action">
+                            <div class="bg-light border"><a href="https://www.messenger.com/t/108286378398611/?messaging_source=source%3Apages%3Amessage_shortlink" class="btn btn-primary action"
+                                     >မှာယူရန်</a></div>
+                            <div class="bg-light border"><a href="tel:09455406870" class="btn btn-primary action"
+                                     >ဖုန်း<i style="margin-left: 10px;"
+                                        class="fas fa-phone"></i></a></div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Drink9 -->
+                <div class="card" style="width: 21rem; margin: auto;">
+                    <!-- <img src="img/Ma Gar Gar Food And Drink Shop/drink/drink (8).png" class="card-img-top" alt="..."> -->
+                    <div class="card-body">
+                        <div class="item-price">
+                        <h5 class="card-title">ဘလူးဘယ်ရီ</h5>
+                        <p class="card-text">ဆော်ဒါ မပါ-1000Ks၊ ပါ-1500Ks၊</p>
+                        <span>ကုဒ်-s19</span>
+                        </div>
+                        <div class="hstack gap-3 card-action">
+                            <div class="bg-light border"><a href="https://www.messenger.com/t/108286378398611/?messaging_source=source%3Apages%3Amessage_shortlink" class="btn btn-primary action"
+                                     >မှာယူရန်</a></div>
+                            <div class="bg-light border"><a href="tel:09455406870" class="btn btn-primary action"
+                                     >ဖုန်း<i style="margin-left: 10px;"
+                                        class="fas fa-phone"></i></a></div>
+                            
+                        </div>
+                    </div>
                 </div>
 
                 
