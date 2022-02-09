@@ -5,6 +5,10 @@
     ::before {
       box-sizing: border-box;
     }
+    a{
+      text-decoration: none;
+      outline: none;
+    }
 
     .card-text {
       font-size: 1rem;
