@@ -1,24 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script>
-        function show(shown, hidden) {
-          document.getElementById(shown).style.display='block';
-          document.getElementById(hidden).style.display='none';
-          return false;
-        }
-    </script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Testing</title>
 </head>
 <body>
-    <div id="Page1">
-            <a href="#" onclick="return show('Page2','Page1');">Show page 2</a>
-    </div>
-        
-      <div id="Page2" style="display:none">
-        <a href="#" onclick="return show('Page1','Page2');">Show page 1</a>
-      </div>
+  <div class="form">
+    <form action="https://formsubmit.co/bef411e767e8cc2da097811f1a8196bf" method="POST">
+      <input type="text" name="Name" placeholder="Full Name" required>
+      <input type="email" name="Email" id="email" placeholder="Email" required>
+      <input type="hidden" name="_next" value="https://nama-ecom.netlify.app/thanks.html">
+      <select name="Continent" id="continent">
+        <option>Africa</option>
+        <option>Europe</option>
+        <option>America</option>
+        <option>Asia</option>
+      </select>
+      <textarea name="Message" id="message" cols="30" rows="10" placeholder="Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </div>
+
+  
 </body>
+</html>
