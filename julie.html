@@ -51,20 +51,9 @@
             border: 1px solid #fa8643;
         }
         
-        /* .category-bar{
-            display: flex;
-            flex-direction: row;
-            overflow-x: auto;
-            overflow-y: hidden;
-            margin: 10px 5px;
-            align-items: center;
-            background:#fa8643 ;
-            border-radius: 10px;
-            padding: 10px 10px ;
-        
-            
-            
-        } */
+        .category-bar{
+            background-color: #fa8643; 
+        }
         
         
         .fa-search{
@@ -113,6 +102,12 @@
         .shop-name{
             margin-left: -4rem;
         }
+        ul li{
+            color: white;
+        }
+        ul{
+            margin-bottom: 2rem;
+        }
     </style>
 </head>
 
@@ -146,12 +141,25 @@
         </div>
         <div class="row">
             <div class="category-bar col" id="categoryBar">
-                <!-- <a href="#"><i class="fas fa-search"></i></a> -->
-                <!-- <a href="#" class="btn btn-primary" onclick="return show('Page2','Page1');">Show page 2</a> -->
-                
-                <a href="#" onclick="return show('Salad','Drink','Flower','moisture');"><h4 class="category">မှာယူနိုင်သော အစားအသောက်များ</h4></a>
-                <!-- <a href="#" onclick="return show('Drink','Salad','Flower','moisture');"><h4 class="category">သစ်သီးဖျော်ရည်များ</h4></a>
-                <a href="#" onclick="return show('Flower','Salad','Drink','moisture');"><h4 class="category">ဆော်ဒါဖျော်ရည်များ</h4></a> -->
+                <Span style="color: white">မီနူး</Span>
+                <ul>
+                <li>သုံးထပ်သားမာလာရှမ်းကော (ပွဲသေး)(5000)/( ပွဲကြီး)(8000)</li>
+                  <li>ကြက်သားမာလာရှမ်းကော (ပွဲသေး)(5000)/( ပွဲကြီး)(8000)</li>
+                  <li>ဝက်သားမာလာရှမ်းကော (ပွဲသေး)(5000)/( ပွဲကြီး)(8000)</li>
+                  <li>ပင်လယ်စာမာလာရှမ်းကော (ပွဲသေး)(6000)/( ပွဲကြီး)(10000)</li>
+                  <li>ပုဇွန်မာလာရှမ်းကော (ပွဲသေး)(6000)/( ပွဲကြီး)(10000)</li>
+                  <li>ဝက်သားမာလာ(1)ပွဲ (4000)</li>
+                  <li>ကြက်သားမာလာ(1)ပွဲ (4000)</li>
+                  <li>ကြက်ပေါင်မာလာ(1)ပွဲ (3500)</li>
+                  <li>ကြက်ခြေထောက်မာလာ(ပွဲသေး) (3000)/(ပွဲကြီး)(4000)</li>
+                  <li>ကြက်‌တောင်ပံမာလာ(ပွဲသေး) (3000)/(ပွဲကြီး)(4000)</li>
+                  <li>ပုဇွန်မာလာ(1)ပွဲ (10000)</li>
+                  <li>ငါးမာလာ(1)ပွဲ (3500)</li>
+                  <li>အာလူးမာလာ(1)ပွဲ (3000)</li>
+                  <li>မာလာဟင်း(1)ပွဲ (1500)</li>
+                  <li>မြေအိုးမြှီးရှည်(1)ပွဲ (1500)</li>
+                  <li>အပ်မှိုမာလာ(1)ပွဲ (2500)</li>
+                </ul>
                 
             </div>
         </div>
@@ -166,8 +174,8 @@
                             <img src="img/15/15 (1).jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <div class="item-price">
-                                <h5 class="card-title">မူရောထောင်း </h5>
-                                <p class="card-text">1000Ks</p>
+                                <h5 class="card-title">ကြက်ပေါင်မာလာ</h5>
+                                <p class="card-text">၃၅၀၀Ks</p>
                                 
                                 </div>
                                 <div class="hstack gap-3 card-action">
@@ -247,8 +255,8 @@
                         <img src="img/15/15 (2).jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <div class="item-price">
-                            <h5 class="card-title">သရက်သီးထောင်း </h5>
-                            <p class="card-text">1000</p>
+                            <h5 class="card-title">သုံးထပ်သားမာလာရှမ်းကော</h5>
+                            <p class="card-text">ပွဲသေး (၅၀၀၀)၊ ပွဲကြီး (၈၀၀၀)</p>
                             
                             </div>
                             <div class="hstack gap-3 card-action">
@@ -269,8 +277,8 @@
                         <img src="img/15/15 (3).jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <div class="item-price">
-                            <h5 class="card-title">ပင်စိမ်းသီး‌ထောင်း </h5>
-                            <p class="card-text">1000Ks</p>
+                            <h5 class="card-title">ငါးမာလာ</h5>
+                            <p class="card-text">၃၅၀၀</p>
                             
                             </div>
                             <div class="hstack gap-3 card-action">
@@ -290,8 +298,8 @@
                         <img src="img/15/15 (4).jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <div class="item-price">
-                            <h5 class="card-title">ကြက်ကြောထောင်း </h5>
-                            <p class="card-text">1500Ks</p>
+                            <h5 class="card-title">မာလာဟင်း</h5>
+                            <p class="card-text">၁၅၀၀</p>
                             
                             </div>
                             <div class="hstack gap-3 card-action">
@@ -303,30 +311,7 @@
                                 
                             </div>
                         </div>
-                        </div>
-    
-                        
-    
-                    <!-- Salad5 -->
-                    <div class="card" style="width: 21rem; margin: auto;">
-                        <img src="img/15/15 (5).jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <div class="item-price">
-                            <h5 class="card-title">သခွါးသီးထောင်း </h5>
-                            <p class="card-text">1000Ks</p>
-                            
-                            </div>
-                            <div class="hstack gap-3 card-action">
-                                <div class="bg-light border"><a href="https://www.messenger.com/t/108286378398611/?messaging_source=source%3Apages%3Amessage_shortlink" class="btn btn-primary action"
-                                         >မှာယူရန်</a></div>
-                                <div class="bg-light border"><a href="tel:09455406870" class="btn btn-primary action"
-                                         >ဖုန်း<i style="margin-left: 10px;"
-                                            class="fas fa-phone"></i></a></div>
-                               
-                            </div>
-                        </div>
-                    </div>
-    
+                        </div>   
                    
 
                     <!-- Salad6 -->
@@ -334,8 +319,8 @@
                         <img src="img/15/15 (6).jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <div class="item-price">
-                            <h5 class="card-title">သဘော်သီးထောင်း </h5>
-                            <p class="card-text">1000</p>
+                            <h5 class="card-title">အပ်မှိုမာလာ</h5>
+                            <p class="card-text">၂၅၀၀</p>
                             
                             </div>
                             <div class="hstack gap-3 card-action">
@@ -354,8 +339,8 @@
                         <img src="img/15/15 (7).jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <div class="item-price">
-                            <h5 class="card-title">သဘော်သီးထောင်း </h5>
-                            <p class="card-text">1000</p>
+                            <h5 class="card-title">ဝက်သားမာလာ</h5>
+                            <p class="card-text">၄၀၀၀</p>
                             
                             </div>
                             <div class="hstack gap-3 card-action">
@@ -374,8 +359,8 @@
                         <img src="img/15/15 (8).jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <div class="item-price">
-                            <h5 class="card-title">သဘော်သီးထောင်း </h5>
-                            <p class="card-text">1000</p>
+                            <h5 class="card-title">ပုဇွန်မာလာရှမ်းကော</h5>
+                            <p class="card-text">ပွဲသေး(၆၀၀၀)၊ ပွဲကြီး(၁၀၀၀၀)</p>
                             
                             </div>
                             <div class="hstack gap-3 card-action">
@@ -394,8 +379,8 @@
                         <img src="img/15/15 (9).jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <div class="item-price">
-                            <h5 class="card-title">သဘော်သီးထောင်း </h5>
-                            <p class="card-text">1000</p>
+                            <h5 class="card-title">ပုဇွန်မာလာ</h5>
+                            <p class="card-text">၁၀၀၀၀</p>
                             
                             </div>
                             <div class="hstack gap-3 card-action">
@@ -414,8 +399,8 @@
                         <img src="img/15/15 (10).jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <div class="item-price">
-                            <h5 class="card-title">သဘော်သီးထောင်း </h5>
-                            <p class="card-text">1000</p>
+                            <h5 class="card-title">မြေအိုးမြှီးရှည်</h5>
+                            <p class="card-text">၁၅၀၀</p>
                             
                             </div>
                             <div class="hstack gap-3 card-action">
@@ -434,8 +419,8 @@
                         <img src="img/15/15 (11).jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <div class="item-price">
-                            <h5 class="card-title">သဘော်သီးထောင်း </h5>
-                            <p class="card-text">1000</p>
+                            <h5 class="card-title">အာလူးမာလာ</h5>
+                            <p class="card-text">၃၀၀၀</p>
                             
                             </div>
                             <div class="hstack gap-3 card-action">
@@ -454,8 +439,8 @@
                         <img src="img/15/15 (12).jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <div class="item-price">
-                            <h5 class="card-title">သဘော်သီးထောင်း </h5>
-                            <p class="card-text">1000</p>
+                            <h5 class="card-title">ပင်လယ်စာမာလာရှမ်းကော</h5>
+                            <p class="card-text">ပွဲသေး(၆၀၀၀)၊ ပွဲကြီး(၁၀၀၀၀)</p>
                             
                             </div>
                             <div class="hstack gap-3 card-action">
@@ -469,25 +454,7 @@
                         </div>
                     </div>
 
-                    <!-- Julie13 -->
-                <div class="card" style="width: 21rem; margin: auto;">
-                    <!-- <img src="img/Ma Gar Gar Food And Drink Shop/drink/drink (8).jpg" class="card-img-top" alt="..."> -->
-                    <div class="card-body">
-                        <div class="item-price">
-                        <h5 class="card-title">ဘလူးဘယ်ရီ</h5>
-                        <p class="card-text">ဆော်ဒါ မပါ-1000Ks၊ ပါ-1500Ks၊</p>
-                        <span>ကုဒ်-s19</span>
-                        </div>
-                        <div class="hstack gap-3 card-action">
-                            <div class="bg-light border"><a href="https://www.messenger.com/t/108286378398611/?messaging_source=source%3Apages%3Amessage_shortlink" class="btn btn-primary action"
-                                     >မှာယူရန်</a></div>
-                            <div class="bg-light border"><a href="tel:09455406870" class="btn btn-primary action"
-                                     >ဖုန်း<i style="margin-left: 10px;"
-                                        class="fas fa-phone"></i></a></div>
-                            
-                        </div>
-                    </div>
-                </div>
+                   
     
                     
     
