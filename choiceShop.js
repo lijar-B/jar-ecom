@@ -1,5 +1,5 @@
-// var i = Math.floor(Math.random() * 6) + 1;
-var i = 0;
+var i = Math.floor(Math.random() * 6) + 1;
+// var i = 0;
 var images = [];
 var time = 2000;
 
