@@ -1,4 +1,4 @@
-var i = Math.floor(Math.random() * 7);;
+var i = Math.floor(Math.random() * 6) + 1;
 var images = [];
 var time = 2000;
 
