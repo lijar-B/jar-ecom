@@ -1,0 +1,1183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" type="image/png" href="img/NaMa.png">
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <title>NaMa-Crown Food and Drink</title>
+
+    
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
+    <style>
+        body,
+        ::after,
+        ::before {
+            box-sizing: border-box;
+        }
+        .card-text {
+            font-size: 1rem;
+        }
+
+        .action {
+            font-size: 0.8rem;
+            color: white;
+            background: #fa8643;
+            border: 1px solid #fa8643;
+        }
+        
+        .category-bar{
+            background-color: #fa8643; 
+        }
+        
+        
+        .fa-search{
+            color: white;
+            border: 1px solid white;
+            padding:10px 10px;
+            margin-right: 20px;
+            border-radius: 5px;
+        }
+        .category{
+            color: white;
+            margin:10px;
+            width: 4rem;
+            text-align: center;
+            cursor: pointer;
+            font-size: 0.7rem;
+        }
+        .category-bar{
+            display: flex;
+            flex-direction: row;
+            overflow-x: auto;
+            overflow-y: hidden;
+            margin: 10px 5px;
+            align-items: center;
+            background:#fa8643 ;
+            border-radius: 10px;
+            padding: 10px 10px ;
+        
+            
+            /* z-index: 1020; */
+        }
+        .active, .category:hover{
+            border: 1px solid white;
+            padding: 10px;
+            border-radius: 10px;
+            font-size: 1rem;
+            width: 7rem;
+            font-family: 'Dancing Script', cursive;
+            
+        }
+        a{
+            text-decoration: none;
+
+        }
+        .card-body{
+            display: flex;
+            flex: row;
+            justify-content: space-between;
+            border: 1px solid #fa8643;
+        }
+        .item-price{
+            align-items: center;
+            color: #fa8643;
+        }
+        .card-action{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+        .shop-name{
+            margin-left: -4rem;
+        }
+        ul li{
+            color: white;
+        }
+        ul{
+            margin-bottom: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/NaMa.png" alt="logo" width="100px" height="50px" class="d-inline-block align-text-bottom">
+                NaMa
+            </a>
+            <span style="display: flex;justify-content: flex-end"><ci-search></ci-search></span>
+        </div>
+    </nav>
+    <div class="menu">
+        <a href="index.html"><i class="fas fa-home"></i></a>
+        <!-- <a data-bs-toggle="offcanvas" data-bs-target="#offcanvasLeftShop" aria-controls="offcanvasRight"><i
+            class="fab fa-shopify"></i></a> -->
+       
+        <a href="#"><i class="fas fa-undo-alt"></i></a>
+      </div>
+    <div class="container">
+        <div class="row">
+            <div class="shop-card col">
+                <div class="shop-card">
+                    <img class="shop-photo" src="img/41/41 (13).jpg" alt="">
+                    <span class="shop-name">Crown Food & Drink</span>
+                    
+                    
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="category-bar col" id="categoryBar">
+                               
+                <a href="#" onclick="return show('A','B','C');"><h4 class="category">Food</h4></a>
+                <a href="#" onclick="return show('B','A','C');"><h4 class="category">အသုပ်</h4></a>
+                <a href="#" onclick="return show('C','B','A');"><h4 class="category">ဆော်ဒါဖျော်ရည်များ</h4></a>
+                
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col">
+                <!-- <h4 class="text-center mb-5 mt-3">Cosmetics</h4> -->
+                <!-- A -->
+                <div id="A">
+                    <!-- A -->
+    
+                        <div class="card mt-50" style="width: 21rem; margin: auto;">
+                            <img src="img/41/41 (1).jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <div class="item-price">
+                                <h5 class="card-title">ဖတ်ကဖောင်း(ကြက်၊၀က်၊၀က်ခေါက်)</h5>
+                                <p class="card-text">၃၀၀၀Ks</p>
+                                
+                                </div>
+                                <div class="hstack gap-3 card-action">
+                                    <div class="bg-light border"><a href="https://www.messenger.com/t/108286378398611/?messaging_source=source%3Apages%3Amessage_shortlink" class="btn btn-primary action"
+                                             >မှာယူရန်</a></div>
+                                    <div class="bg-light border"><a href="tel:09455406870" class="btn btn-primary action"
+                                             >ဖုန်း<i style="margin-left: 10px;"
+                                                class="fas fa-phone"></i></a></div>
+                                    <!-- <div class="bg-light border"><button class="btn btn-primary action" type="button"
+                                            data-bs-toggle="offcanvas" data-bs-target="#offcanvasRightA1"
+                                            aria-controls="offcanvasRight"  >
+                                            ပစ္စည်းအကြောင်း
+                                        </button></div> -->
+                                </div>
+                            </div>
+                        </div>
+        
+                        <!-- <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRightA1"
+                            aria-labelledby="offcanvasRightLabel">
+                            <div class="offcanvas-header">
+                                <h5 id="offcanvasRightLabel">အထောင်း</h5>
+                                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <div class="pho">
+                                    <img class="img" src="img/ (10).jpg" alt="">
+                                    <img class="img" src="img/ (11).jpg" alt="">
+                                    <img class="img" src="img/ (12).jpg" alt="">
+                                    <img class="img" src="img/ (100).jpg" alt="">
+                                    <img class="img" src="img/ (110).jpg" alt="">
+                                    <img class="img" src="img/ (113).jpg" alt="">
+                                </div>
+                                <div class="info mt-3">
+                                    <h4 style="font-weight: bold;">ဂျင်းအရှည် <span style="float: right;">15000Ks</span></h4>
+        
+                                    <span>မြန်မာပြည်တွင် ပြုလုပ်သည်။</span>
+                                </div>
+                                <div class="description mt-4">
+                                    <p>ခရီးထွက်ချိန်ဝတ်မလား၊ ချစ်သူနဲ့ လျှောက်လည်ချိန်ဝတ်မလား၊ ဘယ်ချိန်ဝတ်ဝတ် လွတ်လပ်ပေါ့ပါးပြီး
+                                        ဒီဇိုင်းမိုက်တဲ့ဂျင်းရှည်။
+                                        လူကြီးလူငယ်မ‌ရွေး ဝတ်လို့ရ(အမျိုးသား)
+                                        အရောင်တွေကတော့ အမဲ၊ အပြာရင့်၊ အပြာနု၊ ခဲ။
+                                        sizeကတော့ 32,34,36,38,40
+                                    </p>
+                                </div>
+                                <div class="more"></div>
+        
+                                <div style="justify-content: center;" class="hstack gap-3">
+                                    <div class="bg-light border"><a
+                                            href="https://www.messenger.com/t/108286378398611/?messaging_source=source%3Apages%3Amessage_shortlink"
+                                            class="btn btn-primary action">မှာယူရန်</a></div>
+                                    <div class="bg-light border"><a href="tel:09455406870"
+                                            class="btn btn-primary action">ဖုန်း<i style="margin-left: 10px;"
+                                                class="fas fa-phone"></i></a>
+                                    </div>
+        
+                                </div>
+                                <span style="display: block;">Recommended</span>
+                                <div class="recommend">
+        
+                                    <img class="reimg" src="img/ (119).jpg" alt="">
+                                    <img class="reimg" src="img/ (79).jpg" alt="">
+                                    <img class="reimg" src="img/ (23).jpg" alt="">
+                                    <img class="reimg" src="img/ (47).jpg" alt="">
+                                    <img class="reimg" src="img/ (47).jpg" alt="">
+                                    <img class="reimg" src="img/ (64).jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="menu">
+                                <a href="#" data-bs-dismiss="offcanvas" aria-label="Close"><i class="fas fa-undo-alt"></i></a>
+                              </div>
+                        </div> -->
+    
+                    <!-- A -->
+                        <div class="card" style="width: 21rem; margin: auto;">
+                        <img src="img/41/41 (2).jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="item-price">
+                            <h5 class="card-title">တုမ့်ယမ်းထမင်းကြော်(ကြက်၊၀က်၊၀က်ခေါက်) 2500</h5>
+                            <p class="card-text">၂၅၀၀</p>
+                            
+                            </div>
+                            <div class="hstack gap-3 card-action">
+                                <div class="bg-light border"><a href="https://www.messenger.com/t/108286378398611/?messaging_source=source%3Apages%3Amessage_shortlink" class="btn btn-primary action"
+                                         >မှာယူရန်</a></div>
+                                <div class="bg-light border"><a href="tel:09455406870" class="btn btn-primary action"
+                                         >ဖုန်း<i style="margin-left: 10px;"
+                                            class="fas fa-phone"></i></a></div>
+                                
+                            </div>
+                        </div>
+                        </div>
+    
+                        
+                    
+                    <!-- A -->
+                        <div class="card" style="width: 21rem; margin: auto;">
+                        <img src="img/41/41 (3).jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="item-price">
+                            <h5 class="card-title">မဆလာထမင်းကြော်(ကြက်၊၀က်) 2500</h5>
+                            <p class="card-text">2500</p>
+                            
+                            </div>
+                            <div class="hstack gap-3 card-action">
+                                <div class="bg-light border"><a href="https://www.messenger.com/t/108286378398611/?messaging_source=source%3Apages%3Amessage_shortlink" class="btn btn-primary action"
+                                         >မှာယူရန်</a></div>
+                                <div class="bg-light border"><a href="tel:09455406870" class="btn btn-primary action"
+                                         >ဖုန်း<i style="margin-left: 10px;"
+                                            class="fas fa-phone"></i></a></div>
+                                
+                            </div>
+                        </div>
+                        </div>
+    
+                       
+                    <!-- A -->
+                        <div class="card" style="width: 21rem; margin: auto;">
+                        <img src="img/41/41 (4).jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="item-price">
+                            <h5 class="card-title">၀က်ခေါက်ကြွပ်ထမင်းကြော်(ကြက်၊၀က်)</h5>
+                            <p class="card-text">3000</p>
+                            
+                            </div>
+                            <div class="hstack gap-3 card-action">
+                                <div class="bg-light border"><a href="https://www.messenger.com/t/108286378398611/?messaging_source=source%3Apages%3Amessage_shortlink" class="btn btn-primary action"
+                                         >မှာယူရန်</a></div>
+                                <div class="bg-light border"><a href="tel:09455406870" class="btn btn-primary action"
+                                         >ဖုန်း<i style="margin-left: 10px;"
+                                            class="fas fa-phone"></i></a></div>
+                                
+                            </div>
+                        </div>
+                        </div>   
+                   
+
+                    <!-- A -->
+                    <div class="card" style="width: 21rem; margin: auto;">
+                        <img src="img/41/41 (5).jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="item-price">
+                            <h5 class="card-title">၀က်ခေါက်ချဉ်ထမင်းကြော်(ကြက်၊၀က်) 2500</h5>
+                            <p class="card-text">2500</p>
+                            
+                            </div>
+                            <div class="hstack gap-3 card-action">
+                                <div class="bg-light border"><a href="https://www.messenger.com/t/108286378398611/?messaging_source=source%3Apages%3Amessage_shortlink" class="btn btn-primary action"
+                                         >မှာယူရန်</a></div>
+                                <div class="bg-light border"><a href="tel:09455406870" class="btn btn-primary action"
+                                         >ဖုန်း<i style="margin-left: 10px;"
+                                            class="fas fa-phone"></i></a></div>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- A -->
+                    <div class="card" style="width: 21rem; margin: auto;">
+                        <img src="img/41/41 (6).jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="item-price">
+                            <h5 class="card-title">တရုတ်ထမင်းကြော်(ကြက်၊၀က်)</h5>
+                            <p class="card-text">2500</p>
+                            
+                            </div>
+                            <div class="hstack gap-3 card-action">
+                                <div class="bg-light border"><a href="https://www.messenger.com/t/108286378398611/?messaging_source=source%3Apages%3Amessage_shortlink" class="btn btn-primary action"
+                                         >မှာယူရန်</a></div>
+                                <div class="bg-light border"><a href="tel:09455406870" class="btn btn-primary action"
+                                         >ဖုန်း<i style="margin-left: 10px;"
+                                            class="fas fa-phone"></i></a></div>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- A -->
+                    <div class="card" style="width: 21rem; margin: auto;">
+                        <img src="img/41/41 (7).jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="item-price">
+                            <h5 class="card-title">ထိုင်းထမင်းကြော်(ကြက်၊၀က်)</h5>
+                            <p class="card-text">2500</p>
+                            
+                            </div>
+                            <div class="hstack gap-3 card-action">
+                                <div class="bg-light border"><a href="https://www.messenger.com/t/108286378398611/?messaging_source=source%3Apages%3Amessage_shortlink" class="btn btn-primary action"
+                                         >မှာယူရန်</a></div>
+                                <div class="bg-light border"><a href="tel:09455406870" class="btn btn-primary action"
+                                         >ဖုန်း<i style="margin-left: 10px;"
+                                            class="fas fa-phone"></i></a></div>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- A -->
+                    <div class="card" style="width: 21rem; margin: auto;">
+                        <img src="img/41/41 (8).jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="item-price">
+                            <h5 class="card-title">ဂျုံခေါက်ဆွဲကြော်(ကြက်၊၀က်)</h5>
+                            <p class="card-text">2500</p>
+                            
+                            </div>
+                            <div class="hstack gap-3 card-action">
+                                <div class="bg-light border"><a href="https://www.messenger.com/t/108286378398611/?messaging_source=source%3Apages%3Amessage_shortlink" class="btn btn-primary action"
+                                         >မှာယူရန်</a></div>
+                                <div class="bg-light border"><a href="tel:09455406870" class="btn btn-primary action"
+                                         >ဖုန်း<i style="margin-left: 10px;"
+                                            class="fas fa-phone"></i></a></div>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- A -->
+                    <div class="card" style="width: 21rem; margin: auto;">
+                        <img src="img/41/41 (9).jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="item-price">
+                            <h5 class="card-title">ဆန်ကြာဇံကြော်(ကြက်၊၀က်) </h5>
+                            <p class="card-text">2500</p>
+                            
+                            </div>
+                            <div class="hstack gap-3 card-action">
+                                <div class="bg-light border"><a href="https://www.messenger.com/t/108286378398611/?messaging_source=source%3Apages%3Amessage_shortlink" class="btn btn-primary action"
+                                         >မှာယူရန်</a></div>
+                                <div class="bg-light border"><a href="tel:09455406870" class="btn btn-primary action"
+                                         >ဖုန်း<i style="margin-left: 10px;"
+                                            class="fas fa-phone"></i></a></div>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- A -->
+                    <div class="card" style="width: 21rem; margin: auto;">
+                        <img src="img/41/41 (10).jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="item-price">
+                            <h5 class="card-title">ဖတ်စီးယုဆန်ပြားကြော်(ကြက်၊၀က်) 2500</h5>
+                            <p class="card-text">2500</p>
+                            
+                            </div>
+                            <div class="hstack gap-3 card-action">
+                                <div class="bg-light border"><a href="https://www.messenger.com/t/108286378398611/?messaging_source=source%3Apages%3Amessage_shortlink" class="btn btn-primary action"
+                                         >မှာယူရန်</a></div>
+                                <div class="bg-light border"><a href="tel:09455406870" class="btn btn-primary action"
+                                         >ဖုန်း<i style="margin-left: 10px;"
+                                            class="fas fa-phone"></i></a></div>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- A -->
+                    <div class="card" style="width: 21rem; margin: auto;">
+                        <img src="img/41/41 (11).jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="item-price">
+                            <h5 class="card-title">မားမားကြော်(ကြက်၊၀က်) 2000</h5>
+                            <p class="card-text">2000</p>
+                            
+                            </div>
+                            <div class="hstack gap-3 card-action">
+                                <div class="bg-light border"><a href="https://www.messenger.com/t/108286378398611/?messaging_source=source%3Apages%3Amessage_shortlink" class="btn btn-primary action"
+                                         >မှာယူရန်</a></div>
+                                <div class="bg-light border"><a href="tel:09455406870" class="btn btn-primary action"
+                                         >ဖုန်း<i style="margin-left: 10px;"
+                                            class="fas fa-phone"></i></a></div>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- A -->
+                    <div class="card" style="width: 21rem; margin: auto;">
+                        <img src="img/41/41 (12).jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="item-price">
+                            <h5 class="card-title">ရှမ်းခေါက်ဆွဲရည်(ကြက်၊၀က်)</h5>
+                            <p class="card-text">1500</p>
+                            
+                            </div>
+                            <div class="hstack gap-3 card-action">
+                                <div class="bg-light border"><a href="https://www.messenger.com/t/108286378398611/?messaging_source=source%3Apages%3Amessage_shortlink" class="btn btn-primary action"
+                                         >မှာယူရန်</a></div>
+                                <div class="bg-light border"><a href="tel:09455406870" class="btn btn-primary action"
+                                         >ဖုန်း<i style="margin-left: 10px;"
+                                            class="fas fa-phone"></i></a></div>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- A -->
+                    <div class="card" style="width: 21rem; margin: auto;">
+                        <img src="img/41/41 (13).jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="item-price">
+                            <h5 class="card-title">ထမင်းပေါင်း(ကြက်၊၀က်)</h5>
+                            <p class="card-text">3000</p>
+                            
+                            </div>
+                            <div class="hstack gap-3 card-action">
+                                <div class="bg-light border"><a href="https://www.messenger.com/t/108286378398611/?messaging_source=source%3Apages%3Amessage_shortlink" class="btn btn-primary action"
+                                         >မှာယူရန်</a></div>
+                                <div class="bg-light border"><a href="tel:09455406870" class="btn btn-primary action"
+                                         >ဖုန်း<i style="margin-left: 10px;"
+                                            class="fas fa-phone"></i></a></div>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- A -->
+                    <div class="card" style="width: 21rem; margin: auto;">
+                        <img src="img/41/41 (14).jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="item-price">
+                            <h5 class="card-title">ထမင်းသုပ်(ကြက်၊၀က်)</h5>
+                            <p class="card-text">2500</p>
+                            
+                            </div>
+                            <div class="hstack gap-3 card-action">
+                                <div class="bg-light border"><a href="https://www.messenger.com/t/108286378398611/?messaging_source=source%3Apages%3Amessage_shortlink" class="btn btn-primary action"
+                                         >မှာယူရန်</a></div>
+                                <div class="bg-light border"><a href="tel:09455406870" class="btn btn-primary action"
+                                         >ဖုန်း<i style="margin-left: 10px;"
+                                            class="fas fa-phone"></i></a></div>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- A -->
+                    <div class="card" style="width: 21rem; margin: auto;">
+                        <img src="img/41/41 (15).jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="item-price">
+                            <h5 class="card-title">လက်ဖက်ထမင်း(ကြက်၊၀က်)</h5>
+                            <p class="card-text">2500</p>
+                            
+                            </div>
+                            <div class="hstack gap-3 card-action">
+                                <div class="bg-light border"><a href="https://www.messenger.com/t/108286378398611/?messaging_source=source%3Apages%3Amessage_shortlink" class="btn btn-primary action"
+                                         >မှာယူရန်</a></div>
+                                <div class="bg-light border"><a href="tel:09455406870" class="btn btn-primary action"
+                                         >ဖုန်း<i style="margin-left: 10px;"
+                                            class="fas fa-phone"></i></a></div>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- A -->
+                    <div class="card" style="width: 21rem; margin: auto;">
+                        <img src="img/41/41 (16).jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="item-price">
+                            <h5 class="card-title">ချဉ်စပ်ကြော်(ကြက်၊၀က်) 6000/(အမဲသား)8000</h5>
+                            <p class="card-text"></p>
+                            
+                            </div>
+                            <div class="hstack gap-3 card-action">
+                                <div class="bg-light border"><a href="https://www.messenger.com/t/108286378398611/?messaging_source=source%3Apages%3Amessage_shortlink" class="btn btn-primary action"
+                                         >မှာယူရန်</a></div>
+                                <div class="bg-light border"><a href="tel:09455406870" class="btn btn-primary action"
+                                         >ဖုန်း<i style="margin-left: 10px;"
+                                            class="fas fa-phone"></i></a></div>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- A -->
+                    <div class="card" style="width: 21rem; margin: auto;">
+                        <img src="img/41/41 (17).png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="item-price">
+                            <h5 class="card-title">ချဉ်စပ်ကြော်(ကြက်၊၀က်) 6000/(အမဲသား)8000</h5>
+                            <p class="card-text"></p>
+                            
+                            </div>
+                            <div class="hstack gap-3 card-action">
+                                <div class="bg-light border"><a href="https://www.messenger.com/t/108286378398611/?messaging_source=source%3Apages%3Amessage_shortlink" class="btn btn-primary action"
+                                         >မှာယူရန်</a></div>
+                                <div class="bg-light border"><a href="tel:09455406870" class="btn btn-primary action"
+                                         >ဖုန်း<i style="margin-left: 10px;"
+                                            class="fas fa-phone"></i></a></div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <!-- A -->
+                    <div class="card" style="width: 21rem; margin: auto;">
+                        <img src="img/41/41 (18).jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="item-price">
+                            <h5 class="card-title">ကြွပ်သံပုရာ (ကြက်၊၀က်) 6000/(အမဲသား) 8000</h5>
+                            <p class="card-text"></p>
+                            
+                            </div>
+                            <div class="hstack gap-3 card-action">
+                                <div class="bg-light border"><a href="https://www.messenger.com/t/108286378398611/?messaging_source=source%3Apages%3Amessage_shortlink" class="btn btn-primary action"
+                                         >မှာယူရန်</a></div>
+                                <div class="bg-light border"><a href="tel:09455406870" class="btn btn-primary action"
+                                         >ဖုန်း<i style="margin-left: 10px;"
+                                            class="fas fa-phone"></i></a></div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <!-- A -->
+                    <div class="card" style="width: 21rem; margin: auto;">
+                        <img src="img/41/41 (19).jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="item-price">
+                            <h5 class="card-title">ချိုချဉ်ကြော်(ကြက်၊၀က်) </h5>
+                            <p class="card-text">6000</p>
+                            
+                            </div>
+                            <div class="hstack gap-3 card-action">
+                                <div class="bg-light border"><a href="https://www.messenger.com/t/108286378398611/?messaging_source=source%3Apages%3Amessage_shortlink" class="btn btn-primary action"
+                                         >မှာယူရန်</a></div>
+                                <div class="bg-light border"><a href="tel:09455406870" class="btn btn-primary action"
+                                         >ဖုန်း<i style="margin-left: 10px;"
+                                            class="fas fa-phone"></i></a></div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <!-- A -->
+                    <div class="card" style="width: 21rem; margin: auto;">
+                        <img src="img/41/41 (20).jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="item-price">
+                            <h5 class="card-title">ပင်စိမ်းကြော်(ကြက်၊၀က်)</h5>
+                            <p class="card-text">6000</p>
+                            
+                            </div>
+                            <div class="hstack gap-3 card-action">
+                                <div class="bg-light border"><a href="https://www.messenger.com/t/108286378398611/?messaging_source=source%3Apages%3Amessage_shortlink" class="btn btn-primary action"
+                                         >မှာယူရန်</a></div>
+                                <div class="bg-light border"><a href="tel:09455406870" class="btn btn-primary action"
+                                         >ဖုန်း<i style="margin-left: 10px;"
+                                            class="fas fa-phone"></i></a></div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <!-- A -->
+                    <div class="card" style="width: 21rem; margin: auto;">
+                        <img src="img/41/41 (21).jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="item-price">
+                            <h5 class="card-title">မုန်ညှင်းချဉ်ကြော်(ကြက်၊၀က်) 4000</h5>
+                            <p class="card-text">4000</p>
+                            
+                            </div>
+                            <div class="hstack gap-3 card-action">
+                                <div class="bg-light border"><a href="https://www.messenger.com/t/108286378398611/?messaging_source=source%3Apages%3Amessage_shortlink" class="btn btn-primary action"
+                                         >မှာယူရန်</a></div>
+                                <div class="bg-light border"><a href="tel:09455406870" class="btn btn-primary action"
+                                         >ဖုန်း<i style="margin-left: 10px;"
+                                            class="fas fa-phone"></i></a></div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <!-- A -->
+                    <div class="card" style="width: 21rem; margin: auto;">
+                        <img src="img/41/41 (22).jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="item-price">
+                            <h5 class="card-title">ခြောက်စပ် (ကြက်၊၀က်) 6000/(အမဲသား) 8000</h5>
+                            <p class="card-text"></p>
+                            
+                            </div>
+                            <div class="hstack gap-3 card-action">
+                                <div class="bg-light border"><a href="https://www.messenger.com/t/108286378398611/?messaging_source=source%3Apages%3Amessage_shortlink" class="btn btn-primary action"
+                                         >မှာယူရန်</a></div>
+                                <div class="bg-light border"><a href="tel:09455406870" class="btn btn-primary action"
+                                         >ဖုန်း<i style="margin-left: 10px;"
+                                            class="fas fa-phone"></i></a></div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <!-- A -->
+                    <div class="card" style="width: 21rem; margin: auto;">
+                        <img src="img/41/41 (23).jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="item-price">
+                            <h5 class="card-title">ခရုဆီ (ကြက်၊၀က်)</h5>
+                            <p class="card-text">6000</p>
+                            
+                            </div>
+                            <div class="hstack gap-3 card-action">
+                                <div class="bg-light border"><a href="https://www.messenger.com/t/108286378398611/?messaging_source=source%3Apages%3Amessage_shortlink" class="btn btn-primary action"
+                                         >မှာယူရန်</a></div>
+                                <div class="bg-light border"><a href="tel:09455406870" class="btn btn-primary action"
+                                         >ဖုန်း<i style="margin-left: 10px;"
+                                            class="fas fa-phone"></i></a></div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <!-- A -->
+                    <div class="card" style="width: 21rem; margin: auto;">
+                        <img src="img/41/41 (24).jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="item-price">
+                            <h5 class="card-title">စပါးလင်ချက် (ကြက်၊၀က်) 6000/(အမဲသား) 8000</h5>
+                            <p class="card-text"></p>
+                            
+                            </div>
+                            <div class="hstack gap-3 card-action">
+                                <div class="bg-light border"><a href="https://www.messenger.com/t/108286378398611/?messaging_source=source%3Apages%3Amessage_shortlink" class="btn btn-primary action"
+                                         >မှာယူရန်</a></div>
+                                <div class="bg-light border"><a href="tel:09455406870" class="btn btn-primary action"
+                                         >ဖုန်း<i style="margin-left: 10px;"
+                                            class="fas fa-phone"></i></a></div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <!-- A -->
+                    <div class="card" style="width: 21rem; margin: auto;">
+                        <img src="img/41/41 (41).jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="item-price">
+                            <h5 class="card-title">အာလူးချောင်းကြော်</h5>
+                            <p class="card-text">3000</p>
+                            
+                            </div>
+                            <div class="hstack gap-3 card-action">
+                                <div class="bg-light border"><a href="https://www.messenger.com/t/108286378398611/?messaging_source=source%3Apages%3Amessage_shortlink" class="btn btn-primary action"
+                                         >မှာယူရန်</a></div>
+                                <div class="bg-light border"><a href="tel:09455406870" class="btn btn-primary action"
+                                         >ဖုန်း<i style="margin-left: 10px;"
+                                            class="fas fa-phone"></i></a></div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <!-- A -->
+                    <div class="card" style="width: 21rem; margin: auto;">
+                        <img src="img/41/41 (42).jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="item-price">
+                            <h5 class="card-title">ပဲငါးပိကြော် (ကြက်၊၀က်၊ပဲပြား) 6000/(အမဲသား) 8000</h5>
+                            <p class="card-text"></p>
+                            
+                            </div>
+                            <div class="hstack gap-3 card-action">
+                                <div class="bg-light border"><a href="https://www.messenger.com/t/108286378398611/?messaging_source=source%3Apages%3Amessage_shortlink" class="btn btn-primary action"
+                                         >မှာယူရန်</a></div>
+                                <div class="bg-light border"><a href="tel:09455406870" class="btn btn-primary action"
+                                         >ဖုန်း<i style="margin-left: 10px;"
+                                            class="fas fa-phone"></i></a></div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <!-- A -->
+                    <div class="card" style="width: 21rem; margin: auto;">
+                        <img src="img/41/41 (43).jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="item-price">
+                            <h5 class="card-title">မာလာချက်ကြော် (ကြက်၊၀က်)6000/(အမဲသား)8000</h5>
+                            <p class="card-text"></p>
+                            
+                            </div>
+                            <div class="hstack gap-3 card-action">
+                                <div class="bg-light border"><a href="https://www.messenger.com/t/108286378398611/?messaging_source=source%3Apages%3Amessage_shortlink" class="btn btn-primary action"
+                                         >မှာယူရန်</a></div>
+                                <div class="bg-light border"><a href="tel:09455406870" class="btn btn-primary action"
+                                         >ဖုန်း<i style="margin-left: 10px;"
+                                            class="fas fa-phone"></i></a></div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <!-- A -->
+                    <div class="card" style="width: 21rem; margin: auto;">
+                        <img src="img/41/41 (44).png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="item-price">
+                            <h5 class="card-title">အသားလုံးမုန်ညှင်းကြော်(ကြက်၊၀က်)</h5>
+                            <p class="card-text">6000</p>
+                            
+                            </div>
+                            <div class="hstack gap-3 card-action">
+                                <div class="bg-light border"><a href="https://www.messenger.com/t/108286378398611/?messaging_source=source%3Apages%3Amessage_shortlink" class="btn btn-primary action"
+                                         >မှာယူရန်</a></div>
+                                <div class="bg-light border"><a href="tel:09455406870" class="btn btn-primary action"
+                                         >ဖုန်း<i style="margin-left: 10px;"
+                                            class="fas fa-phone"></i></a></div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <!-- A -->
+                    <div class="card" style="width: 21rem; margin: auto;">
+                        <img src="img/41/41 (45).jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="item-price">
+                            <h5 class="card-title">စင်းကောတောက်တောက်ကြော်(ကြက်၊၀က်)6000/(အမဲသား)</h5>
+                            <p class="card-text">8000</p>
+                            
+                            </div>
+                            <div class="hstack gap-3 card-action">
+                                <div class="bg-light border"><a href="https://www.messenger.com/t/108286378398611/?messaging_source=source%3Apages%3Amessage_shortlink" class="btn btn-primary action"
+                                         >မှာယူရန်</a></div>
+                                <div class="bg-light border"><a href="tel:09455406870" class="btn btn-primary action"
+                                         >ဖုန်း<i style="margin-left: 10px;"
+                                            class="fas fa-phone"></i></a></div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <!-- A -->
+                    <div class="card" style="width: 21rem; margin: auto;">
+                        <img src="img/41/41 (46).jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="item-price">
+                            <h5 class="card-title">၀က်သားချဉ်ကြော်</h5>
+                            <p class="card-text">4000</p>
+                            
+                            </div>
+                            <div class="hstack gap-3 card-action">
+                                <div class="bg-light border"><a href="https://www.messenger.com/t/108286378398611/?messaging_source=source%3Apages%3Amessage_shortlink" class="btn btn-primary action"
+                                         >မှာယူရန်</a></div>
+                                <div class="bg-light border"><a href="tel:09455406870" class="btn btn-primary action"
+                                         >ဖုန်း<i style="margin-left: 10px;"
+                                            class="fas fa-phone"></i></a></div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <!-- A -->
+                    <div class="card" style="width: 21rem; margin: auto;">
+                        <img src="img/41/41 (47).jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="item-price">
+                            <h5 class="card-title">ဆိတ်မွထောင်း</h5>
+                            <p class="card-text">6000</p>
+                            
+                            </div>
+                            <div class="hstack gap-3 card-action">
+                                <div class="bg-light border"><a href="https://www.messenger.com/t/108286378398611/?messaging_source=source%3Apages%3Amessage_shortlink" class="btn btn-primary action"
+                                         >မှာယူရန်</a></div>
+                                <div class="bg-light border"><a href="tel:09455406870" class="btn btn-primary action"
+                                         >ဖုန်း<i style="margin-left: 10px;"
+                                            class="fas fa-phone"></i></a></div>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+
+                   
+    
+                    
+    
+    
+                </div>
+                <div id="B">
+                    <!-- B -->
+                    <div class="card" style="width: 21rem; margin: auto;">
+                        <img src="img/41/41 (25).png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="item-price">
+                            <h5 class="card-title">ပဲကြာဇံနားရွက်မှိုသုပ်</h5>
+                            <p class="card-text">3500</p>
+                            
+                            </div>
+                            <div class="hstack gap-3 card-action">
+                                <div class="bg-light border"><a href="https://www.messenger.com/t/108286378398611/?messaging_source=source%3Apages%3Amessage_shortlink" class="btn btn-primary action"
+                                         >မှာယူရန်</a></div>
+                                <div class="bg-light border"><a href="tel:09455406870" class="btn btn-primary action"
+                                         >ဖုန်း<i style="margin-left: 10px;"
+                                            class="fas fa-phone"></i></a></div>
+                                
+                            </div>
+                        </div>
+                        </div>
+                    <!-- B -->
+                    <div class="card" style="width: 21rem; margin: auto;">
+                        <img src="img/41/41 (26).png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="item-price">
+                            <h5 class="card-title">၀က်စင်းကောတောက်တောက်သုပ်</h5>
+                            <p class="card-text">5000</p>
+                            
+                            </div>
+                            <div class="hstack gap-3 card-action">
+                                <div class="bg-light border"><a href="https://www.messenger.com/t/108286378398611/?messaging_source=source%3Apages%3Amessage_shortlink" class="btn btn-primary action"
+                                         >မှာယူရန်</a></div>
+                                <div class="bg-light border"><a href="tel:09455406870" class="btn btn-primary action"
+                                         >ဖုန်း<i style="margin-left: 10px;"
+                                            class="fas fa-phone"></i></a></div>
+                                
+                            </div>
+                        </div>
+                        </div>
+                    <!-- B -->
+                    <div class="card" style="width: 21rem; margin: auto;">
+                        <img src="img/41/41 (27).jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="item-price">
+                            <h5 class="card-title">ကြက်တောင်ပံသုပ် 3500</h5>
+                            <p class="card-text">3500</p>
+                            
+                            </div>
+                            <div class="hstack gap-3 card-action">
+                                <div class="bg-light border"><a href="https://www.messenger.com/t/108286378398611/?messaging_source=source%3Apages%3Amessage_shortlink" class="btn btn-primary action"
+                                         >မှာယူရန်</a></div>
+                                <div class="bg-light border"><a href="tel:09455406870" class="btn btn-primary action"
+                                         >ဖုန်း<i style="margin-left: 10px;"
+                                            class="fas fa-phone"></i></a></div>
+                                
+                            </div>
+                        </div>
+                        </div>
+                    <!-- B -->
+                    <div class="card" style="width: 21rem; margin: auto;">
+                        <img src="img/41/41 (28).jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="item-price">
+                            <h5 class="card-title">ကြက်ခြေထောက်သုပ်</h5>
+                            <p class="card-text">5000</p>
+                            
+                            </div>
+                            <div class="hstack gap-3 card-action">
+                                <div class="bg-light border"><a href="https://www.messenger.com/t/108286378398611/?messaging_source=source%3Apages%3Amessage_shortlink" class="btn btn-primary action"
+                                         >မှာယူရန်</a></div>
+                                <div class="bg-light border"><a href="tel:09455406870" class="btn btn-primary action"
+                                         >ဖုန်း<i style="margin-left: 10px;"
+                                            class="fas fa-phone"></i></a></div>
+                                
+                            </div>
+                        </div>
+                        </div>
+                    <!-- B -->
+                    <div class="card" style="width: 21rem; margin: auto;">
+                        <img src="img/41/41 (29).jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="item-price">
+                            <h5 class="card-title">၀က်သားချဉ်သုပ်</h5>
+                            <p class="card-text">3500</p>
+                            
+                            </div>
+                            <div class="hstack gap-3 card-action">
+                                <div class="bg-light border"><a href="https://www.messenger.com/t/108286378398611/?messaging_source=source%3Apages%3Amessage_shortlink" class="btn btn-primary action"
+                                         >မှာယူရန်</a></div>
+                                <div class="bg-light border"><a href="tel:09455406870" class="btn btn-primary action"
+                                         >ဖုန်း<i style="margin-left: 10px;"
+                                            class="fas fa-phone"></i></a></div>
+                                
+                            </div>
+                        </div>
+                        </div>
+                    <!-- B -->
+                    <div class="card" style="width: 21rem; margin: auto;">
+                        <img src="img/41/41 (30).jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="item-price">
+                            <h5 class="card-title">မူယောသုပ်</h5>
+                            <p class="card-text">3000</p>
+                            
+                            </div>
+                            <div class="hstack gap-3 card-action">
+                                <div class="bg-light border"><a href="https://www.messenger.com/t/108286378398611/?messaging_source=source%3Apages%3Amessage_shortlink" class="btn btn-primary action"
+                                         >မှာယူရန်</a></div>
+                                <div class="bg-light border"><a href="tel:09455406870" class="btn btn-primary action"
+                                         >ဖုန်း<i style="margin-left: 10px;"
+                                            class="fas fa-phone"></i></a></div>
+                                
+                            </div>
+                        </div>
+                        </div>
+                    <!-- B -->
+                    <div class="card" style="width: 21rem; margin: auto;">
+                        <img src="img/41/41 (31).jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="item-price">
+                            <h5 class="card-title">ကြက်/၀က်/၀က်ခေါက်သုပ်</h5>
+                            <p class="card-text">6000</p>
+                            
+                            </div>
+                            <div class="hstack gap-3 card-action">
+                                <div class="bg-light border"><a href="https://www.messenger.com/t/108286378398611/?messaging_source=source%3Apages%3Amessage_shortlink" class="btn btn-primary action"
+                                         >မှာယူရန်</a></div>
+                                <div class="bg-light border"><a href="tel:09455406870" class="btn btn-primary action"
+                                         >ဖုန်း<i style="margin-left: 10px;"
+                                            class="fas fa-phone"></i></a></div>
+                                
+                            </div>
+                        </div>
+                        </div>
+                    <!-- B -->
+                    <div class="card" style="width: 21rem; margin: auto;">
+                        <img src="img/41/41 (32).jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="item-price">
+                            <h5 class="card-title">ငါးသေတ္တာသုပ်</h5>
+                            <p class="card-text">3500</p>
+                            
+                            </div>
+                            <div class="hstack gap-3 card-action">
+                                <div class="bg-light border"><a href="https://www.messenger.com/t/108286378398611/?messaging_source=source%3Apages%3Amessage_shortlink" class="btn btn-primary action"
+                                         >မှာယူရန်</a></div>
+                                <div class="bg-light border"><a href="tel:09455406870" class="btn btn-primary action"
+                                         >ဖုန်း<i style="margin-left: 10px;"
+                                            class="fas fa-phone"></i></a></div>
+                                
+                            </div>
+                        </div>
+                        </div>
+                    <!-- A2 -->
+                    <div class="card" style="width: 21rem; margin: auto;">
+                        <img src="img/41/41 (32).jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="item-price">
+                            <h5 class="card-title">ဖီတန်သုပ်</h5>
+                            <p class="card-text">3500</p>
+                            
+                            </div>
+                            <div class="hstack gap-3 card-action">
+                                <div class="bg-light border"><a href="https://www.messenger.com/t/108286378398611/?messaging_source=source%3Apages%3Amessage_shortlink" class="btn btn-primary action"
+                                         >မှာယူရန်</a></div>
+                                <div class="bg-light border"><a href="tel:09455406870" class="btn btn-primary action"
+                                         >ဖုန်း<i style="margin-left: 10px;"
+                                            class="fas fa-phone"></i></a></div>
+                                
+                            </div>
+                        </div>
+                        </div>
+                    <!-- B -->
+                    <div class="card" style="width: 21rem; margin: auto;">
+                        <img src="img/41/41 (33).png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="item-price">
+                            <h5 class="card-title">ဆိတ်မွသုပ်</h5>
+                            <p class="card-text">6000</p>
+                            
+                            </div>
+                            <div class="hstack gap-3 card-action">
+                                <div class="bg-light border"><a href="https://www.messenger.com/t/108286378398611/?messaging_source=source%3Apages%3Amessage_shortlink" class="btn btn-primary action"
+                                         >မှာယူရန်</a></div>
+                                <div class="bg-light border"><a href="tel:09455406870" class="btn btn-primary action"
+                                         >ဖုန်း<i style="margin-left: 10px;"
+                                            class="fas fa-phone"></i></a></div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <!-- B -->
+                    <div class="card" style="width: 21rem; margin: auto;">
+                        <img src="img/41/41 (34).jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="item-price">
+                            <h5 class="card-title">ခေါက်ဆွဲသုပ်</h5>
+                            <p class="card-text">1500</p>
+                            
+                            </div>
+                            <div class="hstack gap-3 card-action">
+                                <div class="bg-light border"><a href="https://www.messenger.com/t/108286378398611/?messaging_source=source%3Apages%3Amessage_shortlink" class="btn btn-primary action"
+                                         >မှာယူရန်</a></div>
+                                <div class="bg-light border"><a href="tel:09455406870" class="btn btn-primary action"
+                                         >ဖုန်း<i style="margin-left: 10px;"
+                                            class="fas fa-phone"></i></a></div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <!-- B -->
+                    <div class="card" style="width: 21rem; margin: auto;">
+                        <img src="img/41/41 (35).png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="item-price">
+                            <h5 class="card-title">မာမားသုပ်</h5>
+                            <p class="card-text">1500</p>
+                            
+                            </div>
+                            <div class="hstack gap-3 card-action">
+                                <div class="bg-light border"><a href="https://www.messenger.com/t/108286378398611/?messaging_source=source%3Apages%3Amessage_shortlink" class="btn btn-primary action"
+                                         >မှာယူရန်</a></div>
+                                <div class="bg-light border"><a href="tel:09455406870" class="btn btn-primary action"
+                                         >ဖုန်း<i style="margin-left: 10px;"
+                                            class="fas fa-phone"></i></a></div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <!-- B -->
+                    <div class="card" style="width: 21rem; margin: auto;">
+                        <img src="img/41/41 (36).jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="item-price">
+                            <h5 class="card-title">မြီးရှည်သုပ်</h5>
+                            <p class="card-text">1500</p>
+                            
+                            </div>
+                            <div class="hstack gap-3 card-action">
+                                <div class="bg-light border"><a href="https://www.messenger.com/t/108286378398611/?messaging_source=source%3Apages%3Amessage_shortlink" class="btn btn-primary action"
+                                         >မှာယူရန်</a></div>
+                                <div class="bg-light border"><a href="tel:09455406870" class="btn btn-primary action"
+                                         >ဖုန်း<i style="margin-left: 10px;"
+                                            class="fas fa-phone"></i></a></div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <!-- B -->
+                    <div class="card" style="width: 21rem; margin: auto;">
+                        <img src="img/41/41 (37).jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="item-price">
+                            <h5 class="card-title">ခရမ်းချဉ်သီးသုပ်</h5>
+                            <p class="card-text">1500</p>
+                            
+                            </div>
+                            <div class="hstack gap-3 card-action">
+                                <div class="bg-light border"><a href="https://www.messenger.com/t/108286378398611/?messaging_source=source%3Apages%3Amessage_shortlink" class="btn btn-primary action"
+                                         >မှာယူရန်</a></div>
+                                <div class="bg-light border"><a href="tel:09455406870" class="btn btn-primary action"
+                                         >ဖုန်း<i style="margin-left: 10px;"
+                                            class="fas fa-phone"></i></a></div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <!-- B -->
+                    <div class="card" style="width: 21rem; margin: auto;">
+                        <img src="img/41/41 (38).jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="item-price">
+                            <h5 class="card-title">ဂျင်းသုပ်</h5>
+                            <p class="card-text">1500</p>
+                            
+                            </div>
+                            <div class="hstack gap-3 card-action">
+                                <div class="bg-light border"><a href="https://www.messenger.com/t/108286378398611/?messaging_source=source%3Apages%3Amessage_shortlink" class="btn btn-primary action"
+                                         >မှာယူရန်</a></div>
+                                <div class="bg-light border"><a href="tel:09455406870" class="btn btn-primary action"
+                                         >ဖုန်း<i style="margin-left: 10px;"
+                                            class="fas fa-phone"></i></a></div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <!-- B -->
+                    <div class="card" style="width: 21rem; margin: auto;">
+                        <img src="img/41/41 (39).png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="item-price">
+                            <h5 class="card-title">လက်ဖက်သုပ်</h5>
+                            <p class="card-text">1500</p>
+                            
+                            </div>
+                            <div class="hstack gap-3 card-action">
+                                <div class="bg-light border"><a href="https://www.messenger.com/t/108286378398611/?messaging_source=source%3Apages%3Amessage_shortlink" class="btn btn-primary action"
+                                         >မှာယူရန်</a></div>
+                                <div class="bg-light border"><a href="tel:09455406870" class="btn btn-primary action"
+                                         >ဖုန်း<i style="margin-left: 10px;"
+                                            class="fas fa-phone"></i></a></div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <!-- B -->
+                    <div class="card" style="width: 21rem; margin: auto;">
+                        <img src="img/41/41 (40).jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="item-price">
+                            <h5 class="card-title">ပဲခြမ်းသုပ်</h5>
+                            <p class="card-text">1500</p>
+                            
+                            </div>
+                            <div class="hstack gap-3 card-action">
+                                <div class="bg-light border"><a href="https://www.messenger.com/t/108286378398611/?messaging_source=source%3Apages%3Amessage_shortlink" class="btn btn-primary action"
+                                         >မှာယူရန်</a></div>
+                                <div class="bg-light border"><a href="tel:09455406870" class="btn btn-primary action"
+                                         >ဖုန်း<i style="margin-left: 10px;"
+                                            class="fas fa-phone"></i></a></div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+
+
+                </div>
+                    
+                
+                
+
+                
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <script src="javascript.js"></script>
+</body>
+
+</html>
